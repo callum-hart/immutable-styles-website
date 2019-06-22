@@ -7,7 +7,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.iss\.jsx$/,
+        test: /\.jsx$/,
         exclude: /node_modules/,
         use: 'babel-loader'
       }
@@ -26,11 +26,12 @@ module.exports = {
     fs: 'empty' // required by ImmutableStylesWebpackPlugin
   },
   output: {
-    path: __dirname + '/dist',
+    path: '/dist',
     publicPath: '/',
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    watchContentBase: true
   }
 };
