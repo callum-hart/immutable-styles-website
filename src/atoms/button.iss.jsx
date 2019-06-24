@@ -1,7 +1,8 @@
 import { createStyle, createMixin } from 'immutable-styles';
+import { primaryCta, secondaryCta, lowContrast } from '../constants/palette';
 
-const mixins = {
-  button: createMixin(
+const button = {
+  default: createMixin(
     <a>
       font-size: 14px;
       font-family: 'Muli', sans-serif;
@@ -9,17 +10,26 @@ const mixins = {
       text-decoration: none;
       padding: 8px 28px;
       border-radius: 20px;
-      color: #232221;
+      color: {lowContrast};
+    </a>
+  ),
+  hover: createMixin(
+    <a pseudo=":hover">
+      text-decoration: underline;
     </a>
   )
 };
 
 export default [
-  <mixins.button className="button-primary">
-    background: #F6FD64;
-  </mixins.button>,
+  <button.default className="button-primary">
+    background: {primaryCta};
+  </button.default>,
 
-  <mixins.button className="button-secondary">
-    background: #F6F4F2;
-  </mixins.button>
+  <button.hover className="button-primary" />,
+
+  <button.default className="button-secondary">
+    background: {secondaryCta};
+  </button.default>,
+
+  <button.hover className="button-secondary" />,
 ];
