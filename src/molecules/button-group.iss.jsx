@@ -1,16 +1,22 @@
 import { createStyle } from 'immutable-styles';
+import { spacing } from '../constants/spacing';
 
 export default [
   <div className="button-group">
     display: flex;
+  </div>,
+
+  <div maxWidth="600" className="button-group">
+    flex-direction: column;
 
     <a className="button-secondary">
-      margin-left: 20px;
+      margin-top: {spacing.sm};
     </a>
   </div>,
 
-  <div maxWidth="500" className="button-group">
-    flex-direction: column;
-    align-items: center;
+  <div minWidth="601" className="button-group">
+    <a className="button-secondary">
+      margin-left: {spacing.md};
+    </a>
   </div>
 ];

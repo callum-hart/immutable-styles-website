@@ -5,9 +5,11 @@ const lowContrast    = '#242322 /* lowContrast */';
 const mediumContrast = '#9E9E9D /* mediumContrast */';
 
 module.exports = {
-  primaryCta,
-  secondaryCta,
-  tertiaryCta,
-  lowContrast,
-  mediumContrast
-}
+  palette: {
+    primaryCta,
+    secondaryCta,
+    tertiaryCta,
+    lowContrast,
+    mediumContrast
+  }
+};

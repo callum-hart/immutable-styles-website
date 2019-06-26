@@ -1,14 +1,17 @@
 import { createStyle } from 'immutable-styles';
-import { mediumContrast } from '../constants/palette';
+import { spacing } from '../constants/spacing';
+import { palette } from '../constants/palette';
 
-const nav = (
-  <nav>
+const header = (
+  <header>
+    padding: {spacing.xl} 0;
+
     <section className="container">
       display: flex;
       justify-content: space-between;
       align-items: center;
     </section>
-  </nav>
+  </header>
 );
 
 const logo = (
@@ -21,7 +24,9 @@ const logo = (
     </object>
 
     <div className="logo__text">
-      <p>color: {mediumContrast};</p>
+      <p>
+        color: {palette.mediumContrast};
+      </p>
       <p pseudo=":first-of-type">
         margin: 0 0 0 6px;
       </p>
@@ -33,6 +38,6 @@ const logo = (
 );
 
 export default [
-  nav,
+  header,
   logo
 ];

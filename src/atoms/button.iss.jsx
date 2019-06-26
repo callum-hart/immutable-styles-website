@@ -1,5 +1,5 @@
 import { createStyle, createMixin } from 'immutable-styles';
-import { primaryCta, secondaryCta, lowContrast } from '../constants/palette';
+import { palette } from '../constants/palette';
 
 const button = {
   default: createMixin(
@@ -8,9 +8,10 @@ const button = {
       font-family: 'Muli', sans-serif;
       font-weight: 700;
       text-decoration: none;
+      text-align: center;
       padding: 8px 28px;
       border-radius: 20px;
-      color: {lowContrast};
+      color: {palette.lowContrast};
     </a>
   ),
   hover: createMixin(
@@ -22,13 +23,13 @@ const button = {
 
 export default [
   <button.default className="button-primary">
-    background: {primaryCta};
+    background: {palette.primaryCta};
   </button.default>,
 
   <button.hover className="button-primary" />,
 
   <button.default className="button-secondary">
-    background: {secondaryCta};
+    background: {palette.secondaryCta};
   </button.default>,
 
   <button.hover className="button-secondary" />,

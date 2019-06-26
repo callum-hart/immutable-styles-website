@@ -5,4 +5,5 @@ import './atoms/button.iss';
 
 import './molecules/button-group.iss';
 
-import './organisms/navigation.iss';
+import './organisms/header.iss';
+import './organisms/footer.iss';
