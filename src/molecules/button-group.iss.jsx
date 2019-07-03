@@ -1,4 +1,5 @@
 import { createStyle } from 'immutable-styles';
+import { width } from '../constants/breakpoints';
 import { spacing } from '../constants/spacing';
 
 export default [
@@ -6,7 +7,7 @@ export default [
     display: flex;
   </div>,
 
-  <div maxWidth="600" className="button-group">
+  <div maxWidth={width.toTablet} className="button-group">
     flex-direction: column;
 
     <a className="button-secondary">
@@ -14,7 +15,7 @@ export default [
     </a>
   </div>,
 
-  <div minWidth="601" className="button-group">
+  <div minWidth={width.fromTablet} className="button-group">
     <a className="button-secondary">
       margin-left: {spacing.md};
     </a>

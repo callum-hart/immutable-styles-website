@@ -1,4 +1,5 @@
 import { createStyle } from 'immutable-styles';
+import { width } from '../constants/breakpoints';
 import { spacing } from '../constants/spacing';
 
 const footer = (
@@ -13,9 +14,8 @@ const footer = (
   </footer>
 );
 
-const projectInfo = (
-  <ul className="project-info">
-    margin: 0;
+const openSourceInfo = [
+  <ul className="open-source-info">
     padding: 0;
     display: flex;
 
@@ -23,17 +23,23 @@ const projectInfo = (
       list-style: none;
       margin-right: {spacing.md};
     </li>
-  </ul>
-);
+  </ul>,
 
-const siteInfo = (
-  <p className="site-info">
-    margin: {spacing.sm} 0 0 0;
-  </p>
-);
+  <ul maxWidth={width.toTablet} className="open-source-info">
+    margin: 0;
+    flex-direction: column;
+
+    <li>
+      margin-bottom: {spacing.sm};
+    </li>
+  </ul>,
+
+  <ul minWidth={width.fromTablet} className="open-source-info">
+    margin: 0 0 {spacing.sm} 0;
+  </ul>
+];
 
 export default [
   footer,
-  projectInfo,
-  siteInfo
+  ...openSourceInfo
 ];

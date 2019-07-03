@@ -5,6 +5,7 @@ import { palette } from '../constants/palette';
 const header = (
   <header>
     padding: {spacing.xl} 0;
+    background: {palette.lowContrast};
 
     <section className="container">
       display: flex;
@@ -19,11 +20,11 @@ const logo = (
     display: flex;
     align-items: center;
 
-    <object className="logo__image">
+    <object className="logo-image">
       width: 80px;
     </object>
 
-    <div className="logo__text">
+    <div className="logo-text">
       <p>
         color: {palette.mediumContrast};
       </p>

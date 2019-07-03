@@ -1,8 +1,8 @@
-var { ImmutableStylesWebpackPlugin } = require('immutable-styles');
+const { ImmutableStylesWebpackPlugin } = require('immutable-styles');
 
 module.exports = {
   entry: [
-    './src/index.js'
+    './src'
   ],
   module: {
     rules: [
