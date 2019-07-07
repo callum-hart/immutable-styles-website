@@ -2,18 +2,28 @@
 <html>
   <head>
     <title>Immutable Styles Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- TODO: audit and remove unused font-weights -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600" rel="stylesheet">
-    <link href="./bundle.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600"
+      rel="stylesheet"
+    />
+    <link href="./bundle.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <section class="container">
         <div class="logo">
-          <object type="image/svg+xml" data="./images/logo.svg" class="logo-image">
+          <object
+            type="image/svg+xml"
+            data="./images/logo.svg"
+            class="logo-image"
+          >
             Immutable Styles Logo
           </object>
           <div class="logo-text">
@@ -35,13 +45,126 @@
       <div class="hero">
         <section class="container">
           <h1>
-            A library for styling web<br> interfaces with a focus on<br>
+            A library for styling web<br class="hide-below-desktop" />
+            interfaces with a focus on<br class="hide-below-desktop" />
             predictability and robustness
           </h1>
           <h2>
-            Immutable styles removes side effects often tied to CSS<br>
+            Immutable styles removes side effects often tied to CSS
+            <br class="hide-below-desktop" />
             allowing unexpected UI bugs to be caught ahead of time
           </h2>
+          <div class="hero-links">
+            <a href="#" class="link">Star</a>
+            <a href="#" class="link">v1.0.51</a>
+          </div>
+        </section>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          class="hero-polygon"
+        >
+          <polygon points="0,100 100,0 100,100" />
+        </svg>
+      </div>
+
+      <div class="content">
+        <section class="container">
+          <div class="row">
+            <div class="col">
+              <h3>No Side Effects</h3>
+              <p>
+                Side effects in CSS describe styles that are neither expected or
+                desired. These side effects are usually a concequence of:
+                selectors clashing with other selectors, selectors targeting
+                unwanted elements, or elements inheriting undesirable styles.
+              </p>
+              <p>
+                Immutability removes these side effects which puts an end to
+                unexpected UI bugs during development, or worse reported by
+                users.
+              </p>
+            </div>
+            <div class="col">
+              <object type="image/svg+xml" data="./images/no-side-effects.svg">
+                No Side Effects Infographic
+              </object>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="row">
+            <div class="col">
+              <object type="image/svg+xml" data="./images/feedback-loop.svg">
+                Instant Feedback Loop Infographic
+              </object>
+            </div>
+            <div class="col">
+              <h3>Instant Feedback Loop</h3>
+              <p>
+                A friendly compiler with beatiful error messages catches
+                conflicting styles, whilst enforcing design patterns aimed at
+                making CSS more resiliant.
+              </p>
+              <p>
+                Code changes and large scale refactoring is a breeze since the
+                compiler catches any unexpected outcomes. Whether overrides
+                occur within the same or another file, among equal or nested
+                selectors, or even among different screen-sizes the compiler
+                catches them all before they reach a browser.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="row">
+            <div class="col">
+              <object type="image/svg+xml" data="./images/deterministic.svg">
+                Deterministic Infographic
+              </object>
+            </div>
+            <div class="col">
+              <h3>Deterministic</h3>
+              <p>
+                Every unique UI variation and state is handled explicitly
+                allowing you to see the full picture, rather than having to
+                piece together often disjointed class combinations and reason
+                with specificity wars or cascading conflicts.
+              </p>
+              <p>
+                This makes code and all its outcomes easier to understand and
+                its behaviour predictable. A ruleset targeting a HTML element
+                will always produce the same result.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="container">
+          <div class="row">
+            <div class="col">
+              <h3>Composition vs Overrides</h3>
+              <p>
+                CSS styles are shared using composition rather than via
+                overrides, which makes reuse more robust whilst encouraging
+                better designed code. Small modular styles can be composed to
+                achieve complex UIs.
+              </p>
+              <p>
+                The laborious task of orchestrating overrides and reasoning with
+                their side effects; determining what override is intentional or
+                not is offloaded to a compiler.
+              </p>
+            </div>
+            <div class="col">
+              <object type="image/svg+xml" data="./images/composition.svg">
+                Composition vs Overrides Infographic
+              </object>
+            </div>
+          </div>
         </section>
       </div>
     </main>

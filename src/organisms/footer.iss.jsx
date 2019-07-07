@@ -1,10 +1,12 @@
 import { createStyle } from 'immutable-styles';
 import { width } from '../constants/breakpoints';
 import { spacing } from '../constants/spacing';
+import { palette } from '../constants/palette';
 
 const footer = (
   <footer>
     padding: {spacing.xl} 0;
+    background: {palette.lowContrast};
 
     <section className="container">
       display: flex;
