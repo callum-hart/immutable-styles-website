@@ -4,7 +4,7 @@ import { palette } from '../constants/palette';
 
 export default [
   <a className="link">
-    font-size: var(--font-size);
+    font-size: var(--size-scale);
     font-family: 'Muli', sans-serif;
     font-weight: 100;
     text-decoration: none;

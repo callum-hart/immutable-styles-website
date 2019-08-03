@@ -4,7 +4,7 @@ import { palette } from '../constants/palette';
 export default (
   <header>
     height: 25vh;
-    max-height: 180px;
+    min-height: 140px;
     background: {palette.lowContrast};
 
     <section className="container">

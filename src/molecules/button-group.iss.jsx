@@ -10,13 +10,13 @@ export default [
     flex-direction: column;
 
     <a className="button-secondary">
-      margin-top: var(--spacing-s);
+      margin-top: var(--size-s);
     </a>
   </div>,
 
   <div minWidth={width.fromTablet} className="button-group">
     <a className="button-secondary">
-      margin-left: var(--spacing-s);
+      margin-left: var(--size-m);
     </a>
   </div>
 ];

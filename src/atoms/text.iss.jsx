@@ -2,10 +2,14 @@ import { createStyle, createMixin } from 'immutable-styles';
 
 export default [
   <body>
-    --font-size: 1rem;
-    --font-s: calc(var(--font-size) * 1);
-    --font-l: calc(var(--font-size) * 2);
-    --font-xl: calc(var(--font-size) * 3.5);
+    --size-base: 1rem;
+    --size-ratio: 1.4;
+    --size-scale: calc(0.2vw + 1em);
+    --size-xs: calc(var(--size-base) / var(--size-ratio));
+    --size-s: calc(var(--size-base) * var(--size-ratio));
+    --size-m: calc(var(--size-base) * var(--size-ratio) * var(--size-ratio));
+    --size-l: calc(var(--size-base) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio));
+    --size-xl: calc(var(--size-base) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio) * var(--size-ratio));
   </body>,
 
   // Upscale all font sizes by changing base-font-size:
@@ -15,20 +19,26 @@ export default [
   // </body>,
 
   <h1>
-    font-size: var(--font-xl);
+    font-size: var(--size-xl);
     font-family: 'Muli', sans-serif;
     font-weight: 800;
   </h1>,
 
   <h2>
-    font-size: var(--font-l);
+    font-size: var(--size-m);
     font-family: 'Muli', sans-serif;
     font-weight: 600;
   </h2>,
 
-  <small>
-    font-size: var(--font-s);
+  <h3>
+    font-size: var(--size-l);
     font-family: 'Muli', sans-serif;
-    font-weight: 100;
-  </small>
+    font-weight: 800;
+  </h3>,
+
+  <p>
+    font-size: var(--size-scale);
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+  </p>
 ];

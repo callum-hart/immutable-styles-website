@@ -8,7 +8,7 @@ export default [
 
     <li>
       list-style: none;
-      margin-right: var(--spacing-s);
+      margin-right: var(--size-s);
     </li>
   </ul>,
 
@@ -17,11 +17,7 @@ export default [
     flex-direction: column;
 
     <li>
-      margin-bottom: var(--spacing-s);
+      margin-bottom: var(--size-s);
     </li>
-  </ul>,
-
-  <ul minWidth={width.fromTablet} className="inline-list">
-    margin: 0 0 var(--spacing-s) 0;
   </ul>
 ];

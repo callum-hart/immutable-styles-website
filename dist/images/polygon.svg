@@ -2,7 +2,7 @@
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 100 100"
   preserveAspectRatio="none"
-  fill="white"
+  fill="#F6F4F2"
 >
   <polygon points="0,100 100,0 100,100" />
 </svg>

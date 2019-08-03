@@ -4,6 +4,7 @@ import { palette } from '../constants/palette';
 export default (
   <div className="hero">
     height: 75vh;
+    min-height: 450px;
     background-color: {palette.lowContrast};
     background-image: url(./images/polygon.svg);
     background-size: 100% 10vh;
@@ -18,7 +19,6 @@ export default (
       </h1>
 
       <h2>
-        margin: var(--spacing-s) 0 var(--spacing-m);
         max-width: 50ch;
         color: {palette.mediumContrast};
       </h2>

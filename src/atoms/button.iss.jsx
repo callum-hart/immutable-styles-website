@@ -4,13 +4,13 @@ import { palette } from '../constants/palette';
 const button = {
   default: createMixin(
     <a>
-      font-size: var(--font-size);
+      font-size: var(--size-scale);
       font-family: 'Muli', sans-serif;
       font-weight: 700;
       text-decoration: none;
       text-align: center;
-      padding: 8px 28px;
-      border-radius: 20px;
+      padding: var(--size-xs) var(--size-m);
+      border-radius: 5px;
       color: {palette.lowContrast};
     </a>
   ),

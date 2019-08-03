@@ -3,7 +3,7 @@ import { palette } from '../constants/palette';
 
 export default (
   <footer>
-    padding: var(--spacing-xl) 0;
+    padding: var(--size-l) 0;
     background: {palette.lowContrast};
 
     <section className="container">
@@ -11,5 +11,9 @@ export default (
       justify-content: space-between;
       align-items: center;
     </section>
+
+    <p>
+      text-align: center;
+    </p>
   </footer>
 );
