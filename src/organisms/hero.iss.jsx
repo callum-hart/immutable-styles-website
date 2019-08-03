@@ -1,46 +1,27 @@
 import { createStyle } from 'immutable-styles';
-import { width } from '../constants/breakpoints';
-import { spacing } from '../constants/spacing';
 import { palette } from '../constants/palette';
-import { heading } from '../constants/typography';
 
-const hero = (
+export default (
   <div className="hero">
-    padding-top: {spacing.l};
-    background: {palette.lowContrast};
+    height: 75vh;
+    background-color: {palette.lowContrast};
+    background-image: url(./images/polygon.svg);
+    background-size: 100% 10vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
 
     <section className="container">
-      <heading.primary>
+      <h1>
         margin: 0;
+        max-width: 25ch;
         color: {palette.highContrast};
-      </heading.primary>,
+      </h1>
 
       <h2>
-        margin: {spacing.md} 0;
+        margin: var(--spacing-s) 0 var(--spacing-m);
+        max-width: 50ch;
         color: {palette.mediumContrast};
       </h2>
     </section>
-
-    <svg className="hero-polygon">
-      display: inherit;
-      width: 100%;
-      height: 5vw;
-      fill: {palette.highContrast};
-    </svg>
   </div>
 );
-
-const heroLinks = (
-  <div className="hero-links">
-    display: flex;
-
-    <a className="link" pseudo=":last-of-type">
-      margin-left: {spacing.md};
-    </a>
-  </div>
-);
-
-export default [
-  hero,
-  heroLinks
-];

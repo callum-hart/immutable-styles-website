@@ -1,44 +1,17 @@
 import { createStyle } from 'immutable-styles';
-import { spacing } from '../constants/spacing';
 import { palette } from '../constants/palette';
 
-const header = (
+export default (
   <header>
-    padding: {spacing.xl} 0;
+    height: 25vh;
+    max-height: 180px;
     background: {palette.lowContrast};
 
     <section className="container">
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 100%;
     </section>
   </header>
 );
-
-const logo = (
-  <div className="logo">
-    display: flex;
-    align-items: center;
-
-    <object className="logo-image">
-      width: 80px;
-    </object>
-
-    <div className="logo-text">
-      <p>
-        color: {palette.mediumContrast};
-      </p>
-      <p pseudo=":first-of-type">
-        margin: 0 0 0 6px;
-      </p>
-      <p pseudo=":last-of-type">
-        margin: 0;
-      </p>
-    </div>
-  </div>
-);
-
-export default [
-  header,
-  logo
-];

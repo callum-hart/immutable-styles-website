@@ -4,7 +4,7 @@ import { palette } from '../constants/palette';
 const button = {
   default: createMixin(
     <a>
-      font-size: 14px;
+      font-size: var(--font-size);
       font-family: 'Muli', sans-serif;
       font-weight: 700;
       text-decoration: none;

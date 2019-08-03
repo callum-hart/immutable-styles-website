@@ -1,24 +1,34 @@
 import { createStyle, createMixin } from 'immutable-styles';
-import { palette } from '../constants/palette';
 
 export default [
-  // <h1>
-  //   font-size: 50px;
-  //   font-family: 'Muli', sans-serif;
-  //   font-weight: 800;
-  // </h1>,
+  <body>
+    --font-size: 1rem;
+    --font-s: calc(var(--font-size) * 1);
+    --font-l: calc(var(--font-size) * 2);
+    --font-xl: calc(var(--font-size) * 3.5);
+  </body>,
+
+  // Upscale all font sizes by changing base-font-size:
+
+  // <body minWidth="600">
+  //   --base-font-size: 1.5rem;
+  // </body>,
+
+  <h1>
+    font-size: var(--font-xl);
+    font-family: 'Muli', sans-serif;
+    font-weight: 800;
+  </h1>,
 
   <h2>
-    font-size: 20px;
+    font-size: var(--font-l);
     font-family: 'Muli', sans-serif;
     font-weight: 600;
   </h2>,
 
-  <p className="text-sm no-stack">
-    font-size: 14px;
+  <small>
+    font-size: var(--font-s);
     font-family: 'Muli', sans-serif;
     font-weight: 100;
-    margin: 0;
-    color: {palette.mediumContrast};
-  </p>
+  </small>
 ];

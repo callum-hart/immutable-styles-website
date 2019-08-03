@@ -1,24 +1,26 @@
 import { createStyle } from "immutable-styles";
-// TODO: regex needs to handle ./ paths aswell as ../
-// import { spacing } from './constants/spacing';
 
-const container = (
+export default [
+  <body>
+    --golden-ratio: 1.61803398875;
+    --spacing-s: calc(var(--font-size) * var(--golden-ratio));
+    --spacing-m: calc(var(--font-size) * var(--golden-ratio) * var(--golden-ratio));
+    --spacing-l: calc(var(--font-size) * var(--golden-ratio) * var(--golden-ratio) * var(--golden-ratio));
+    --spacing-xl: calc(var(--font-size) * var(--golden-ratio) * var(--golden-ratio) * var(--golden-ratio) * var(--golden-ratio));
+  </body>,
+
   <section className="container">
     max-width: 1100px;
     margin: 0 auto;
-    {/* padding: 0 {spacing.l}; */}
-    padding: 0 30px;
-  </section>
-);
+    padding: 0 var(--spacing-l);
 
-const row = (
-  <div className="row">
-    display: flex;
-    align-items: center;
-    <div className="col">
-      flex: 1;
+    <div className="row">
+      display: flex;
+      align-items: center;
+
+      <div className="col">
+        flex: 1;
+      </div>
     </div>
-  </div>
-);
-
-export default [container, row];
+  </section>
+];
