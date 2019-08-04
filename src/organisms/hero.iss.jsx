@@ -3,11 +3,14 @@ import { palette } from '../constants/palette';
 
 export default (
   <div className="hero">
-    height: 75vh;
-    min-height: 450px;
+    display: flex;
+    align-items: center;
+    height: calc(75vh + var(--header-height) / 2);
+    min-height: 500px;
+    margin-top: calc(var(--header-height) / 2 * -1);
     background-color: {palette.lowContrast};
     background-image: url(./images/polygon.svg);
-    background-size: 100% 10vh;
+    background-size: 100% 50px;
     background-repeat: no-repeat;
     background-position: bottom;
 

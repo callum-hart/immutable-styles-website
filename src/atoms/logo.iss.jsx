@@ -12,9 +12,9 @@ export default (
 
     <p className="logo-text">
       max-width: 16ch;
-      text-indent: 8px;
+      text-indent: 1ch;
       font-family: 'IBM Plex Mono';
-      font-size: var(--font-s);
+      font-size: 1rem;
       color: {palette.mediumContrast};
     </p>
   </div>

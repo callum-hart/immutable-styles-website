@@ -4,7 +4,7 @@ export default [
   <body>
     --size-base: 1rem;
     --size-ratio: 1.4;
-    --size-scale: calc(0.2vw + 1em);
+    --size-scale: calc(0.1vw + 1em);
     --size-xs: calc(var(--size-base) / var(--size-ratio));
     --size-s: calc(var(--size-base) * var(--size-ratio));
     --size-m: calc(var(--size-base) * var(--size-ratio) * var(--size-ratio));

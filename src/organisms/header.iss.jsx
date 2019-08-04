@@ -1,9 +1,13 @@
 import { createStyle } from 'immutable-styles';
 import { palette } from '../constants/palette';
 
-export default (
+export default [
+  <body>
+    --header-height: 25vh;
+  </body>,
+
   <header>
-    height: 25vh;
+    height: var(--header-height);
     min-height: 140px;
     background: {palette.lowContrast};
 
@@ -14,4 +18,4 @@ export default (
       height: 100%;
     </section>
   </header>
-);
+];
