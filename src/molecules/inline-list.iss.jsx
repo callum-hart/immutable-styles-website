@@ -1,5 +1,5 @@
 import { createStyle } from 'immutable-styles';
-import { width } from '../constants/breakpoint';
+import { to_m } from '../constants/breakpoint';
 
 export default [
   <ul className="inline-list">
@@ -12,7 +12,7 @@ export default [
     </li>
   </ul>,
 
-  <ul maxWidth={width.toTablet} className="inline-list">
+  <ul {...to_m} className="inline-list">
     margin: 0;
     flex-direction: column;
 

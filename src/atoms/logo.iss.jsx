@@ -1,12 +1,17 @@
 import { createStyle } from 'immutable-styles';
 import { palette } from '../constants/palette';
+import { to_s, from_s } from '../constants/breakpoint';
 
 export default (
   <div className="logo">
     display: flex;
     align-items: center;
 
-    <object className="logo-image">
+    <object {...to_s} className="logo-image">
+      width: 75px;
+    </object>
+
+    <object {...from_s} className="logo-image">
       width: 100px;
     </object>
 

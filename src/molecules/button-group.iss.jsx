@@ -1,12 +1,12 @@
 import { createStyle } from 'immutable-styles';
-import { width } from '../constants/breakpoint';
+import { to_xs, from_xs } from '../constants/breakpoint';
 
 export default [
   <div className="button-group">
     display: flex;
   </div>,
 
-  <div maxWidth={width.toTablet} className="button-group">
+  <div {...to_xs} className="button-group">
     flex-direction: column;
 
     <a className="button-secondary">
@@ -14,7 +14,7 @@ export default [
     </a>
   </div>,
 
-  <div minWidth={width.fromTablet} className="button-group">
+  <div {...from_xs} className="button-group">
     <a className="button-secondary">
       margin-left: var(--size-m);
     </a>
