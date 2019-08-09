@@ -18,7 +18,7 @@ export default (
     <p className="logo-text">
       max-width: 16ch;
       text-indent: 1ch;
-      font-family: 'IBM Plex Mono';
+      font-family: 'IBM Plex Mono', monospace;
       font-size: 1rem;
       color: {palette.mediumContrast};
     </p>

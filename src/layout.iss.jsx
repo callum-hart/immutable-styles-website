@@ -1,4 +1,5 @@
 import { createStyle } from "immutable-styles";
+import { from_s } from './constants/breakpoint';
 
 export default (
   <section className="container">
@@ -7,14 +8,5 @@ export default (
     margin: 0 auto;
     padding: 0 var(--size-xl);
     box-sizing: border-box;
-
-    <div className="row">
-      display: flex;
-      align-items: center;
-
-      <div className="col">
-        flex: 1;
-      </div>
-    </div>
   </section>
 );

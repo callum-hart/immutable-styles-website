@@ -3,6 +3,7 @@ import './layout.iss';
 // import './utils.iss';
 
 import './atoms/button.iss';
+import './atoms/infographic.iss';
 import './atoms/link.iss';
 import './atoms/logo.iss';
 import './atoms/text.iss';
@@ -14,3 +15,4 @@ import './organisms/footer.iss';
 import './organisms/header.iss';
 import './organisms/hero.iss';
 import './organisms/main.iss';
+import './organisms/pitch.iss';
