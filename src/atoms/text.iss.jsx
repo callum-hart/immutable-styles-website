@@ -13,19 +13,19 @@ export default [
   </body>,
 
   <body {...to_xs}>
-    --size-base: 0.5rem;
-  </body>,
-
-  <body {...from_xs_to_s}>
     --size-base: 0.6rem;
   </body>,
 
-  <body {...from_s_to_m}>
+  <body {...from_xs_to_s}>
     --size-base: 0.7rem;
   </body>,
 
-  <body {...from_m_to_l}>
+  <body {...from_s_to_m}>
     --size-base: 0.8rem;
+  </body>,
+
+  <body {...from_m_to_l}>
+    --size-base: 0.9rem;
   </body>,
 
   <body {...from_l}>
@@ -48,11 +48,17 @@ export default [
     font-size: var(--size-m);
     font-family: 'Muli', sans-serif;
     font-weight: 800;
+    line-height: var(--size-ratio);
+    margin-top: var(--size-l);
+    margin-bottom: 0;
   </h3>,
 
   <p>
     font-size: var(--size-scale);
     font-family: 'Muli', sans-serif;
-    {/* font-weight: 700; */}
+    font-weight: 600;
+    line-height: var(--size-ratio);
+    margin-top: var(--size-m);
+    margin-bottom: 0;
   </p>
 ];
