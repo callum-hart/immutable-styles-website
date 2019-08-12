@@ -11,8 +11,8 @@ import './atoms/text.iss';
 import './molecules/button-group.iss';
 import './molecules/inline-list.iss';
 
+import './organisms/feature.iss';
 import './organisms/footer.iss';
 import './organisms/header.iss';
 import './organisms/hero.iss';
 import './organisms/main.iss';
-import './organisms/pitch.iss';

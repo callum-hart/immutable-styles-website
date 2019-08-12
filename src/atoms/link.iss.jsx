@@ -6,7 +6,6 @@ export default [
   <a className="link">
     font-size: var(--size-scale);
     font-family: 'Muli', sans-serif;
-    font-weight: 100;
     text-decoration: none;
     padding: 0 2px;
     color: {palette.tertiaryCta};
