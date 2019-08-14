@@ -47,8 +47,8 @@
             and robustness
           </h1>
           <h2>
-            Immutable Styles removes side effects often tied to CSS allowing
-            unexpected UI bugs to be caught ahead of time
+            Immutable Styles removes CSS side effects allowing unexpected UI
+            bugs to be caught ahead of time
           </h2>
           <ul class="inline-list">
             <li>
@@ -72,7 +72,7 @@
               height="189"
               class="infographic"
             >
-              <rect width="100%" height="100%" fill="#F6F4F2"/>
+              <rect width="100%" height="100%" fill="#F6F4F2" />
               <defs>
                 <path d="M214.4.36h214.29v189.28H214.4V.36z" id="b1RWuWHm0b" />
                 <path
@@ -140,7 +140,7 @@
         </section>
       </div>
 
-      <div class="feature color-invert">
+      <div class="feature">
         <section class="container">
           <div class="instant-feedback-loop">
             <svg
@@ -151,7 +151,7 @@
               height="189"
               class="infographic"
             >
-              <rect width="100%" height="100%" fill="#F6F4F2"/>
+              <rect width="100%" height="100%" fill="#F6F4F2" />
               <defs>
                 <path d="M214.71 0H429v189.29H214.71V0z" id="a2gLFD3GYF" />
                 <path
@@ -244,7 +244,7 @@
               height="189"
               class="infographic"
             >
-              <rect width="100%" height="100%" fill="#F6F4F2"/>
+              <rect width="100%" height="100%" fill="#F6F4F2" />
               <defs>
                 <path d="M214.4.36h214.29v189.28H214.4V.36z" id="aD01RccQ4" />
                 <path
@@ -326,7 +326,7 @@
         </section>
       </div>
 
-      <div class="feature color-invert">
+      <div class="feature">
         <section class="container">
           <div class="composition-vs-overrides">
             <svg
@@ -337,7 +337,7 @@
               height="189"
               class="infographic"
             >
-              <rect width="100%" height="100%" fill="#F6F4F2"/>
+              <rect width="100%" height="100%" fill="#F6F4F2" />
               <defs>
                 <path d="M214.71 0H429v189.29H214.71V0z" id="b1llI72LWP" />
                 <path
@@ -414,6 +414,46 @@
               their side effects; determining what override is intentional or
               not is offloaded to a compiler.
             </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="example">
+        <section class="container">
+          <div>
+            <h3>Simple Example</h3>
+            <p>
+              Styles are expressed using the same data structure as the DOM via
+              JSX.
+            </p>
+            <p>
+              A unified data structure common between markup and presentation
+              helps reduce context switching between CSS selectors and their
+              target HTML.
+            </p>
+          </div>
+          <div>
+            <ul class="code-frame">
+              <li>/* @jsx createStyle */</li>
+              <li>
+                import { createStyle } from 'immutable-styles';
+              </li>
+              <li>
+                const tablet = '768';
+              </li>
+              <li>
+                const desktop = '769';
+              </li>
+              <li>
+                &lt;a className="nav-link" maxWidth={tablet}&gt;
+              </li>
+              <li>
+                font-size: 1.2rem;
+              </li>
+              <li>
+                padding: 16px;
+              </li>
+            </ul>
           </div>
         </section>
       </div>
