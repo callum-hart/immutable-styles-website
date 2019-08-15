@@ -423,8 +423,8 @@
           <div>
             <h3>Simple Example</h3>
             <p>
-              Styles are expressed using the same data structure as the DOM via
-              JSX.
+              Styles are expressed using the same data structure as the DOM
+              using JSX.
             </p>
             <p>
               A unified data structure common between markup and presentation
@@ -432,28 +432,70 @@
               target HTML.
             </p>
           </div>
+
           <div>
-            <ul class="code-frame">
-              <li>/* @jsx createStyle */</li>
-              <li>
-                import { createStyle } from 'immutable-styles';
-              </li>
-              <li>
-                const tablet = '768';
-              </li>
-              <li>
-                const desktop = '769';
-              </li>
-              <li>
-                &lt;a className="nav-link" maxWidth={tablet}&gt;
-              </li>
-              <li>
-                font-size: 1.2rem;
-              </li>
-              <li>
-                padding: 16px;
-              </li>
-            </ul>
+            <code>
+              <ul class="code-frame">
+                <li>
+                  <span class="comment">/* @jsx createStyle */</span>
+                </li>
+                <li>
+                  <span class="keyword">import</span> { createStyle }
+                  <span class="keyword">from</span>
+                  <span class="string">'immutable-styles'</span>;
+                </li>
+                <li class="stack-up">
+                  <span class="keyword">const</span> tablet =
+                  <span class="string">'768'</span>;
+                </li>
+                <li>
+                  <span class="keyword">const</span> desktop =
+                  <span class="string">'769'</span>;
+                </li>
+                <li class="stack-up">
+                  <span class="keyword">export default</span> [
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;a</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"nav-link"</span
+                  >
+                  <span class="attribute">maxWidth</span>=<span
+                    class="jsx-variable"
+                    >{tablet}</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">font-size</span>: 1.2rem;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">padding</span>: 16px;
+                </li>
+                <li class="tab-1"><span class="tag">&lt;/a&gt;</span>,</li>
+                <li class="tab-1 stack-up">
+                  <span class="tag">&lt;a</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"nav-link"</span
+                  >
+                  <span class="attribute">minWidth</span>=<span
+                    class="jsx-variable"
+                    >{desktop}</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">font-size</span>: 1rem;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">padding</span>: 12px;
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;/a&gt;</span>
+                </li>
+                <li>
+                  ];
+                </li>
+              </ul>
+            </code>
           </div>
         </section>
       </div>
