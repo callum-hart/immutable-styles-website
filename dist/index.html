@@ -19,14 +19,42 @@
     <header>
       <section class="container">
         <div class="logo">
-          <!-- TODO: inline SVG so that its colors can be controlled via CSS -->
-          <object
-            type="image/svg+xml"
-            data="./images/logo.svg"
-            class="logo-image"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 170 130"
+            width="170"
+            height="130"
           >
-            Immutable Styles Logo
-          </object>
+            <defs>
+              <path
+                d="M167.4.95c2.28 0 4.12 1.85 4.12 4.13v15.56c0 2.28-1.84 4.12-4.12 4.12H66.12A4.12 4.12 0 0 1 62 20.64V5.08A4.13 4.13 0 0 1 66.12.95H167.4z"
+                id="a"
+              />
+              <path
+                d="M50.67.95a3.23 3.23 0 0 1 3.23 3.24v17.33a3.23 3.23 0 0 1-3.23 3.24H3.57a3.24 3.24 0 0 1-3.24-3.24V4.19A3.24 3.24 0 0 1 3.57.95h47.1z"
+                id="b"
+              />
+              <path
+                d="M136.21 37.62a4.12 4.12 0 0 1 4.12 4.12V57.3c0 2.28-1.84 4.13-4.12 4.13H34.93a4.13 4.13 0 0 1-4.12-4.13V41.74c0-2.27 1.85-4.12 4.12-4.12h101.28z"
+                id="c"
+              />
+              <path
+                d="M117.16 69.52c2.28 0 4.13 1.85 4.13 4.13v15.56c0 2.28-1.85 4.12-4.13 4.12H34.93a4.12 4.12 0 0 1-4.12-4.12V73.65a4.13 4.13 0 0 1 4.12-4.13h82.23z"
+                id="d"
+              />
+              <path
+                d="M50.67 106.67c1.79 0 3.23 1.45 3.23 3.23v17.34a3.23 3.23 0 0 1-3.23 3.24H3.57a3.24 3.24 0 0 1-3.24-3.24V109.9c0-1.78 1.45-3.23 3.24-3.23h47.1z"
+                id="e"
+              />
+            </defs>
+            <use xlink:href="#a" fill="#64fd87" />
+            <use xlink:href="#b" fill="#50d2f3" />
+            <use xlink:href="#c" fill="#9e9e9d" />
+            <use xlink:href="#d" fill="#9e9e9d" />
+            <use xlink:href="#e" fill="#50d2f3" />
+          </svg>
+
           <p class="logo-text">/* Immutable */ /* Styles */</p>
         </div>
 
@@ -182,7 +210,13 @@
                   d="M51.27 116.65c-6.53 0-11.82-5.29-11.82-11.81V84.16c0-6.52 5.29-11.81 11.82-11.81h35.28c6.52 0 11.81 5.29 11.81 11.81v20.68c0 6.52-5.29 11.81-11.81 11.81H51.27z"
                   id="m2dCqd4RKs"
                 />
-                <text id="b244ZehRmp" x="56" y="104" font-size="27">
+                <text
+                  id="b244ZehRmp"
+                  x="56"
+                  y="104"
+                  font-size="27"
+                  class="svg-text"
+                >
                   ⌘
                 </text>
                 <path
@@ -370,25 +404,12 @@
                 />
                 <text
                   id="b4duLT8nJV"
-                  x="93.33"
-                  y="25.58"
-                  font-size="26"
-                  font-family="Open Sans"
-                  font-weight="600"
-                  letter-spacing="0"
-                  alignment-baseline="before-edge"
-                  transform="translate(-4.16 4.922)"
-                  style="line-height:100%"
-                  dominant-baseline="text-before-edge"
+                  x="88"
+                  y="57"
+                  font-size="27"
+                  class="svg-text"
                 >
-                  <tspan
-                    x="93.33"
-                    dy="0em"
-                    alignment-baseline="before-edge"
-                    dominant-baseline="text-before-edge"
-                  >
-                    =
-                  </tspan>
+                  =
                 </text>
               </defs>
               <use xlink:href="#b1llI72LWP" fill="#0c0b0b" />
@@ -430,6 +451,69 @@
               A unified data structure common between markup and presentation
               helps reduce context switching between CSS selectors and their
               target HTML.
+            </p>
+          </div>
+
+          <div>
+            <code>
+              <ul class="code-frame">
+                <li>
+                  <span class="comment">/* @jsx createStyle */</span>
+                </li>
+                <li>
+                  <span class="keyword">import</span> { createStyle }
+                  <span class="keyword">from</span>
+                  <span class="string">'immutable-styles'</span>;
+                </li>
+                <li class="stack-up">
+                  <span class="keyword">export default</span> (
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;p</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"greeting"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">font-family</span>: 'Muli',
+                  sans-serif;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">font-size</span>: 2rem;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">line-height</span>: 4rem;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">color</span>: hotpink;
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;/p&gt;</span>
+                </li>
+                <li>);</li>
+              </ul>
+            </code>
+          </div>
+        </section>
+      </div>
+
+      <div class="example">
+        <section class="container">
+          <div>
+            <h3>Mobile Friendly</h3>
+            <p>
+              CSS features such as media queries are exposed using a familiar
+              and intuitive API.
+            </p>
+            <p>
+              This example optimizes navigation links for different screen
+              sizes. On tablet-sized devices the text size is increased
+              (improving readbility) whilst the clickable target area is
+              enlarged (to be forgiving to thumbs).
+            </p>
+            <p>
+              Since immutable styles is just JavaScript we can share common
+              values using variables such as the tablet and desktop breakpoints.
             </p>
           </div>
 
@@ -491,9 +575,289 @@
                 <li class="tab-1">
                   <span class="tag">&lt;/a&gt;</span>
                 </li>
+                <li>];</li>
+              </ul>
+            </code>
+          </div>
+        </section>
+      </div>
+
+      <div class="example">
+        <section class="container">
+          <div>
+            <h3>Composition</h3>
+            <p>
+              Common styles can be reused using the createMixin helper function
+              that creates immutable mixins.
+            </p>
+            <p>
+              This example mixin holds commons styles shared among all buttons.
+              Each button variant can use the mixin like a template and
+              subsequently add its own unique styles such as background and
+              color.
+            </p>
+            <p>
+              Immutable mixins offer the same guarantee and protection against
+              side effects.
+            </p>
+          </div>
+
+          <div>
+            <code>
+              <ul class="code-frame">
+                <li>
+                  <span class="comment">/* @jsx createStyle */</span>
+                </li>
+                <li><span class="keyword">import</span> {</li>
+                <li class="tab-1">createStyle,</li>
+                <li class="tab-1">createMixin</li>
+                <li>
+                  } = <span class="keyword">from</span
+                  ><span class="string">'immutable-styles'</span>;
+                </li>
+                <li class="stack-up">
+                  <span class="keyword">const</span> mixins = {
+                </li>
+                <li class="tab-1">
+                  button: <span class="function">createMixin</span>(
+                </li>
+                <li class="tab-2">
+                  <span class="tag">&lt;button&gt;</span>
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">padding</span>: 10px 20px;
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">border</span>: none;
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">font-size</span>: 1rem;
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">border-radius</span>: 3px;
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">cursor</span>: pointer;
+                </li>
+                <li class="tab-2">
+                  <span class="tag">&lt;/button&gt;</span>
+                </li>
+                <li class="tab-1">)</li>
+                <li>};</li>
+                <li class="stack-up">
+                  <span class="keyword">export default</span> [
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;mixins.button</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"btn-primary"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">background</span>: hotpink;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">color</span>: ivory;
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;/mixins.button</span
+                  ><span class="tag">&gt;</span>,
+                </li>
+                <li class="tab-1 stack-up">
+                  <span class="tag">&lt;mixins.button</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"btn-secondary"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">background</span>: ivory;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">color</span>: hotpink;
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;/mixins.button</span
+                  ><span class="tag">&gt;</span>
+                </li>
                 <li>
                   ];
                 </li>
+              </ul>
+            </code>
+          </div>
+        </section>
+      </div>
+
+      <div class="example">
+        <section class="container">
+          <div>
+            <h3>Interactions</h3>
+            <p>
+              User interactions are expressed in the same way as normal
+              non-interactive styles.
+            </p>
+            <p>
+              The tooltip in this example reveals additional information to the
+              user when they hover over the icon and its prompt.
+            </p>
+            <p>
+              All CSS pseudo classes such as :hover and pseudo elements such as
+              ::before are supported in immutable styles.
+            </p>
+          </div>
+
+          <div>
+            <code>
+              <ul class="code-frame">
+                <li>
+                  <span class="comment">/* @jsx createStyle */</span>
+                </li>
+                <li>
+                  <span class="keyword">import</span> { createStyle }
+                  <span class="keyword">from</span>
+                  <span class="string">'immutable-styles'</span>;
+                </li>
+                <li class="stack-up">
+                  <span class="keyword">export default</span> [
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;div</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"tooltip"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">position</span>: relative;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">color</span>: hotpink;
+                </li>
+                <li class="tab-2 stack-up">
+                  <span class="tag">&lt;p</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"content"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">display</span>: none;
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">position</span>: absolute;
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">width</span>: 200px;
+                </li>
+                <li class="tab-2">
+                  <span class="tag">&lt;/p&gt;</span>
+                </li>
+                <li class="tab-1"><span class="tag">&lt;/div&gt;</span>,</li>
+                <li class="tab-1 stack-up">
+                  <span class="tag">&lt;div</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"tooltip"</span
+                  ><span class="attribute">pseudo</span>=<span class="string"
+                    >":hover"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="tag">&lt;p</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"content"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-3">
+                  <span class="property-name">display</span>: block;
+                </li>
+                <li class="tab-2">
+                  <span class="tag">&lt;/p&gt;</span>
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;/div&gt;</span>
+                </li>
+                <li>
+                  ];
+                </li>
+              </ul>
+            </code>
+          </div>
+        </section>
+      </div>
+
+      <div class="example">
+        <section class="container">
+          <div>
+            <h3>UI States</h3>
+            <p>
+              Immutable styles is symbiotic with other libraries and existing
+              best practices.
+            </p>
+            <p>
+              This example uses the darken utility function from
+              <a href="" class="link">polished</a> to change the form background
+              during its loading state. Since states are handled explicitly it
+              becomes easy to identify every state the form has and how it looks
+              in each state.
+            </p>
+            <p>
+              This example uses the <a href="" class="link">BEM</a> naming
+              convension to make the forms CSS classname more meaningful.
+            </p>
+          </div>
+
+          <div>
+            <code>
+              <ul class="code-frame">
+                <li>
+                  <span class="comment">/* @jsx createStyle */</span>
+                </li>
+                <li>
+                  <span class="keyword">import</span> { createStyle }
+                  <span class="keyword">from</span>
+                  <span class="string">'immutable-styles'</span>;
+                </li>
+                <li>
+                  <span class="keyword">import</span> { darken }
+                  <span class="keyword">from</span>
+                  <span class="string">'polished'</span>;
+                </li>
+                <li class="stack-up">
+                  <span class="keyword">const</span> formBackground =
+                  <span class="string">'white'</span>;
+                </li>
+                <li class="stack-up">
+                  <span class="keyword">export default</span> [
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;form</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"bank-transfer"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">background</span>: {
+                  formBackground };
+                </li>
+                <li class="tab-1"><span class="tag">&lt;/form&gt;</span>,</li>
+                <li class="tab-1 stack-up">
+                  <span class="tag">&lt;form</span>
+                  <span class="attribute">className</span>=<span class="string"
+                    >"bank-transfer bank-transfer--loading"</span
+                  ><span class="tag">&gt;</span>
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">background</span>: {
+                  <span class="function">darken</span>(0.2, formBackground ) };
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">opacity</span>: 0.6;
+                </li>
+                <li class="tab-2">
+                  <span class="property-name">pointer-events</span>: none;
+                </li>
+                <li class="tab-1">
+                  <span class="tag">&lt;/form&gt;</span>
+                </li>
+                <li>];</li>
               </ul>
             </code>
           </div>

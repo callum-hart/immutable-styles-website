@@ -7,13 +7,13 @@ export default (
     display: flex;
     align-items: center;
 
-    <object {...to_s} className="logo-image">
+    <svg {...to_s}>
       width: 75px;
-    </object>
+    </svg>
 
-    <object {...from_s} className="logo-image">
+    <svg {...from_s}>
       width: 100px;
-    </object>
+    </svg>
 
     <p className="logo-text">
       max-width: 16ch;

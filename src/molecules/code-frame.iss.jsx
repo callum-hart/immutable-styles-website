@@ -33,6 +33,10 @@ export default [
       text-indent: 4ch;
     </mixins.loc>
 
+    <mixins.loc className="tab-3">
+      text-indent: 6ch;
+    </mixins.loc>
+
     <mixins.loc className="tab-1 stack-up">
       text-indent: 2ch;
       margin-top: var(--size-s);
@@ -40,6 +44,11 @@ export default [
 
     <mixins.loc className="tab-2 stack-up">
       text-indent: 4ch;
+      margin-top: var(--size-s);
+    </mixins.loc>
+
+    <mixins.loc className="tab-3 stack-up">
+      text-indent: 6ch;
       margin-top: var(--size-s);
     </mixins.loc>
   </ul>,
@@ -57,6 +66,10 @@ export default [
   </span>,
 
   <span className="attribute">
+    color: {palette.primaryCta};
+  </span>,
+
+  <span className="function">
     color: {palette.primaryCta};
   </span>,
 
