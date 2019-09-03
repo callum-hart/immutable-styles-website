@@ -3,8 +3,27 @@ import { palette } from '../constants/palette';
 import { to_s, from_s } from '../constants/breakpoint';
 
 export default [
+  <div pseudo=":nth-child(even)" className="feature">
+    --feature-background: {palette.highContrast};
+    --feature-heading-color: {palette.lowContrast};
+  </div>,
+
+  <div pseudo=":nth-child(odd)" className="feature">
+    --feature-background: {palette.lowContrast};
+    --feature-heading-color: {palette.highContrast};
+  </div>,
+
   <div className="feature">
     padding-bottom: var(--size-xl);
+    background-color: var(--feature-background);
+
+    <section className="container">
+      <div>
+        <h3>
+          color: var(--feature-heading-color);
+        </h3>
+      </div>
+    </section>
   </div>,
 
   <div {...to_s} className="feature">
@@ -18,18 +37,6 @@ export default [
 
       <div>
         padding-left: var(--size-xl);
-      </div>
-    </section>
-  </div>,
-
-  <div pseudo=":nth-child(odd)" className="feature">
-    background-color: {palette.lowContrast};
-
-    <section className="container">
-      <div>
-        <h3>
-          color: {palette.highContrast};
-        </h3>
       </div>
     </section>
   </div>

@@ -8,16 +8,47 @@ const mixins = {
       font-size: var(--size-scale);
       font-family: 'IBM Plex Mono', monospace;
       font-weight: 500;
-      color: {palette.mediumContrast};
+      color: var(--code-color);
     </li>
   )
 };
 
 export default [
+  <code className="simple-example">
+    <ul className="code-frame">
+      box-shadow: var(--size-xs) var(--size-xs) #71F990;
+    </ul>
+  </code>,
+
+  <code className="mobile-friendly">
+    <ul className="code-frame">
+      box-shadow: var(--size-xs) var(--size-xs) #57D2F1;
+    </ul>
+  </code>,
+
+  <code className="composition">
+    <ul className="code-frame">
+      box-shadow: var(--size-xs) var(--size-xs) #F8656B;
+    </ul>
+  </code>,
+
+  <code className="interactions">
+    <ul className="code-frame">
+      box-shadow: var(--size-xs) var(--size-xs) {palette.primaryCta};
+    </ul>
+  </code>,
+
+  <code className="ui-states">
+    <ul className="code-frame">
+      box-shadow: var(--size-xs) var(--size-xs) #71F990;
+    </ul>
+  </code>,
+
   <ul className="code-frame">
     margin-top: var(--size-l);
     margin-bottom: 0;
-    padding-left: var(--size-xl);
+    padding: var(--size-s);
+    background: var(--code-background);
 
     <mixins.loc />
 
@@ -54,34 +85,34 @@ export default [
   </ul>,
 
   <span className="comment">
-    opacity: 0.6;
+    color: var(--code-comment-color);
   </span>,
 
   <span className="keyword">
-    color: {palette.tertiaryCta};
+    color: var(--code-keyword-color);
   </span>,
 
   <span className="tag">
-    color: #5DD2EF;
+    color: var(--code-tag-color);
   </span>,
 
   <span className="attribute">
-    color: {palette.primaryCta};
+    color: var(--code-attribute-color);
   </span>,
 
   <span className="function">
-    color: {palette.primaryCta};
+    color: var(--code-function-color);
   </span>,
 
   <span className="string">
-    color: #6BFB8C;
+    color: var(--code-string-color);
   </span>,
 
   <span className="jsx-variable">
-    color: {palette.highContrast};
+    color: var(--code-jsx-variable-color);
   </span>,
 
   <span className="property-name">
-    color: {palette.highContrast};
+    color: var(--code-property-name-color);
   </span>
 ];
