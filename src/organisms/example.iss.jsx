@@ -42,20 +42,17 @@ export default [
       min-width: 1000px;
       display: flex;
 
-      <div>
-        flex: 1;
+      <div pseudo=":first-of-type">
+        max-width: 440px;
+        padding-right: var(--size-xl);
 
         <h3>
           color: var(--example-heading-color);
         </h3>
       </div>
 
-      <div pseudo=":first-of-type">
-        max-width: 440px;
-        padding-right: var(--size-xl);
-      </div>
-
-      <div pseudo=":last-of-type">
+      <div className="tabs">
+        flex: 1;
         min-width: 450px;
       </div>
     </section>
