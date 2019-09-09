@@ -14,41 +14,12 @@ const mixins = {
 };
 
 export default [
-  <code className="simple-example">
-    <ul className="code-frame">
-      box-shadow: var(--size-xs) var(--size-xs) #71F990;
-    </ul>
-  </code>,
-
-  <code className="mobile-friendly">
-    <ul className="code-frame">
-      box-shadow: var(--size-xs) var(--size-xs) #57D2F1;
-    </ul>
-  </code>,
-
-  <code className="composition">
-    <ul className="code-frame">
-      box-shadow: var(--size-xs) var(--size-xs) #F8656B;
-    </ul>
-  </code>,
-
-  <code className="interactions">
-    <ul className="code-frame">
-      box-shadow: var(--size-xs) var(--size-xs) {palette.primaryCta};
-    </ul>
-  </code>,
-
-  <code className="ui-states">
-    <ul className="code-frame">
-      box-shadow: var(--size-xs) var(--size-xs) #71F990;
-    </ul>
-  </code>,
-
   <ul className="code-frame">
-    margin-top: var(--size-l);
+    margin-top: 0;
     margin-bottom: 0;
     padding: var(--size-s);
     background: var(--code-background);
+    box-shadow: var(--size-xs) var(--size-xs) {palette.mediumContrast};
 
     <mixins.loc />
 

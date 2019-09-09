@@ -3,6 +3,8 @@ import { palette } from '../constants/palette';
 import { to_s, from_s } from '../constants/breakpoint';
 
 export default [
+  // TODO: rename variables to something less specific (i.e: --mode-color, --mode-background)
+
   <div pseudo=":nth-child(even)" className="feature">
     --feature-background: {palette.highContrast};
     --feature-heading-color: {palette.lowContrast};

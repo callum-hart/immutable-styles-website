@@ -2,6 +2,8 @@ import { createStyle } from 'immutable-styles';
 import { palette } from '../constants/palette';
 
 export default [
+  // TODO: rename variables to something less specific (i.e: --mode-color, --mode-background)
+
   <div pseudo=":nth-child(even)" className="example">
     --example-background: {palette.highContrast};
     --example-heading-color: {palette.lowContrast};
@@ -52,6 +54,7 @@ export default [
       </div>
 
       <div className="tabs">
+        margin-top: var(--size-l);
         flex: 1;
         min-width: 450px;
       </div>

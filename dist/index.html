@@ -93,7 +93,7 @@
 
       <div class="feature">
         <section class="container">
-          <div class="no-side-effects">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -172,7 +172,7 @@
 
       <div class="feature">
         <section class="container">
-          <div class="instant-feedback-loop">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -271,7 +271,7 @@
 
       <div class="feature">
         <section class="container">
-          <div class="deterministic">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -364,7 +364,7 @@
 
       <div class="feature">
         <section class="container">
-          <div class="composition-vs-overrides">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -457,8 +457,9 @@
           </div>
 
           <div class="tabs">
-            <div role="tablist" aria-label="Simple Example Tabs">
+            <div class="tablist" role="tablist" aria-label="Simple Example Tabs">
               <button
+                class="tab-button active"
                 role="tab"
                 aria-selected="true"
                 aria-controls="panel-simple-example-source"
@@ -468,6 +469,7 @@
                 Source
               </button>
               <button
+                class="tab-button"
                 role="tab"
                 aria-selected="false"
                 aria-controls="panel-simple-example-result"
@@ -483,7 +485,7 @@
               tabindex="0"
               aria-labelledby="tab-simple-example-source"
             >
-              <code class="simple-example">
+              <code>
                 <ul class="code-frame">
                   <li>
                     <span class="comment">/* @jsx createStyle */</span>
@@ -530,7 +532,9 @@
               aria-labelledby="tab-simple-example-result"
               hidden
             >
-              <p>Result...</p>
+              <div class="example-result">
+                example-result
+              </div>
             </div>
           </div>
         </section>
@@ -557,8 +561,9 @@
           </div>
 
           <div class="tabs">
-            <div role="tablist" aria-label="Mobile Friendly Tabs">
+            <div class="tablist" role="tablist" aria-label="Mobile Friendly Tabs">
               <button
+                class="tab-button active"
                 role="tab"
                 aria-selected="true"
                 aria-controls="panel-mobile-friendly-source"
@@ -568,6 +573,7 @@
                 Source
               </button>
               <button
+                class="tab-button"
                 role="tab"
                 aria-selected="false"
                 aria-controls="panel-mobile-friendly-result"
@@ -583,7 +589,7 @@
               tabindex="0"
               aria-labelledby="tab-mobile-friendly-source"
             >
-              <code class="mobile-friendly">
+              <code>
                 <ul class="code-frame">
                   <li>
                     <span class="comment">/* @jsx createStyle */</span>
@@ -653,7 +659,9 @@
               aria-labelledby="tab-mobile-friendly-result"
               hidden
             >
-              <p>Result...</p>
+              <div class="example-result">
+                example-result
+              </div>
             </div>
           </div>
         </section>
@@ -680,8 +688,9 @@
           </div>
 
           <div class="tabs">
-            <div role="tablist" aria-label="Composition Tabs">
+            <div class="tablist" role="tablist" aria-label="Composition Tabs">
               <button
+                class="tab-button active"
                 role="tab"
                 aria-selected="true"
                 aria-controls="panel-composition-source"
@@ -691,6 +700,7 @@
                 Source
               </button>
               <button
+                class="tab-button"
                 role="tab"
                 aria-selected="false"
                 aria-controls="panel-composition-result"
@@ -706,7 +716,7 @@
               tabindex="0"
               aria-labelledby="tab-composition-source"
             >
-              <code class="composition">
+              <code>
                 <ul class="code-frame">
                   <li>
                     <span class="comment">/* @jsx createStyle */</span>
@@ -797,7 +807,9 @@
               aria-labelledby="tab-composition-result"
               hidden
             >
-              <p>Result...</p>
+              <div class="example-result">
+                example-result
+              </div>
             </div>
           </div>
         </section>
@@ -822,8 +834,9 @@
           </div>
 
           <div class="tabs">
-            <div role="tablist" aria-label="Interactions Tabs">
+            <div class="tablist" role="tablist" aria-label="Interactions Tabs">
               <button
+                class="tab-button active"
                 role="tab"
                 aria-selected="true"
                 aria-controls="panel-interactions-source"
@@ -833,6 +846,7 @@
                 Source
               </button>
               <button
+                class="tab-button"
                 role="tab"
                 aria-selected="false"
                 aria-controls="panel-interactions-result"
@@ -848,7 +862,7 @@
               tabindex="0"
               aria-labelledby="tab-interactions-source"
             >
-              <code class="interactions">
+              <code>
                 <ul class="code-frame">
                   <li>
                     <span class="comment">/* @jsx createStyle */</span>
@@ -932,7 +946,9 @@
               aria-labelledby="tab-interactions-result"
               hidden
             >
-              <p>Result...</p>
+              <div class="example-result">
+                example-result
+              </div>
             </div>
           </div>
         </section>
@@ -960,8 +976,9 @@
           </div>
 
           <div class="tabs">
-            <div role="tablist" aria-label="UI States Tabs">
+            <div class="tablist" role="tablist" aria-label="UI States Tabs">
               <button
+                class="tab-button active"
                 role="tab"
                 aria-selected="true"
                 aria-controls="panel-ui-states-source"
@@ -971,6 +988,7 @@
                 Source
               </button>
               <button
+                class="tab-button"
                 role="tab"
                 aria-selected="false"
                 aria-controls="panel-ui-states-result"
@@ -986,7 +1004,7 @@
               tabindex="0"
               aria-labelledby="tab-ui-states-source"
             >
-              <code class="ui-states">
+              <code>
                 <ul class="code-frame">
                   <li>
                     <span class="comment">/* @jsx createStyle */</span>
@@ -1052,7 +1070,9 @@
               aria-labelledby="tab-ui-states-result"
               hidden
             >
-              <p>Result...</p>
+              <div class="example-result">
+                example-result
+              </div>
             </div>
           </div>
         </section>
