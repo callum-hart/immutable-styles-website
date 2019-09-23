@@ -480,6 +480,8 @@
               </button>
             </div>
             <div
+              class="tabpanel"
+                class="tabpanel"
               id="panel-simple-example-source"
               role="tabpanel"
               tabindex="0"
@@ -526,6 +528,8 @@
               </code>
             </div>
             <div
+              class="tabpanel"
+                class="tabpanel"
               id="panel-simple-example-result"
               role="tabpanel"
               tabindex="0"
@@ -533,7 +537,7 @@
               hidden
             >
               <div class="example-result">
-                example-result
+                <p class="greeting">Hello world</p>
               </div>
             </div>
           </div>
@@ -584,6 +588,7 @@
               </button>
             </div>
             <div
+              class="tabpanel"
               id="panel-mobile-friendly-source"
               role="tabpanel"
               tabindex="0"
@@ -653,6 +658,7 @@
               </code>
             </div>
             <div
+              class="tabpanel"
               id="panel-mobile-friendly-result"
               role="tabpanel"
               tabindex="0"
@@ -660,7 +666,7 @@
               hidden
             >
               <div class="example-result">
-                example-result
+                TODO: come up with different example
               </div>
             </div>
           </div>
@@ -711,6 +717,7 @@
               </button>
             </div>
             <div
+              class="tabpanel"
               id="panel-composition-source"
               role="tabpanel"
               tabindex="0"
@@ -725,8 +732,8 @@
                   <li class="tab-1">createStyle,</li>
                   <li class="tab-1">createMixin</li>
                   <li>
-                    } = <span class="keyword">from</span
-                    ><span class="string">'immutable-styles'</span>;
+                    } <span class="keyword">from</span
+                    ><span class="string"> 'immutable-styles'</span>;
                   </li>
                   <li class="stack-up">
                     <span class="keyword">const</span> mixins = {
@@ -801,14 +808,17 @@
               </code>
             </div>
             <div
+              class="tabpanel"
               id="panel-composition-result"
               role="tabpanel"
               tabindex="0"
               aria-labelledby="tab-composition-result"
               hidden
             >
-              <div class="example-result">
-                example-result
+              <div class="example-composition-result">
+                <button class="primary-button" type="button">Primary Button</button>
+                <button class="secondary-button" type="button">Secondary Button</button>
+                <button class="tertery-button" type="button">Tertery Button</button>
               </div>
             </div>
           </div>
@@ -857,6 +867,7 @@
               </button>
             </div>
             <div
+              class="tabpanel"
               id="panel-interactions-source"
               role="tabpanel"
               tabindex="0"
@@ -885,9 +896,6 @@
                   <li class="tab-2">
                     <span class="property-name">position</span>: relative;
                   </li>
-                  <li class="tab-2">
-                    <span class="property-name">color</span>: hotpink;
-                  </li>
                   <li class="tab-2 stack-up">
                     <span class="tag">&lt;p</span>
                     <span class="attribute">className</span>=<span
@@ -913,7 +921,7 @@
                     <span class="attribute">className</span>=<span
                       class="string"
                       >"tooltip"</span
-                    ><span class="attribute">pseudo</span>=<span class="string"
+                    ><span class="attribute"> pseudo</span>=<span class="string"
                       >":hover"</span
                     ><span class="tag">&gt;</span>
                   </li>
@@ -940,6 +948,7 @@
               </code>
             </div>
             <div
+              class="tabpanel"
               id="panel-interactions-result"
               role="tabpanel"
               tabindex="0"
@@ -947,7 +956,12 @@
               hidden
             >
               <div class="example-result">
-                example-result
+                <div class="tooltip">
+                  Hover over me
+                  <p class="content">
+                    Tooltip
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -999,6 +1013,7 @@
               </button>
             </div>
             <div
+              class="tabpanel"
               id="panel-ui-states-source"
               role="tabpanel"
               tabindex="0"
@@ -1064,6 +1079,7 @@
               </code>
             </div>
             <div
+              class="tabpanel"
               id="panel-ui-states-result"
               role="tabpanel"
               tabindex="0"
@@ -1071,7 +1087,12 @@
               hidden
             >
               <div class="example-result">
-                example-result
+                <form class="checkout">
+                  checkout
+                </form>
+                <form class="checkout checkout--loading">
+                  checkout checkout--loading
+                </form>
               </div>
             </div>
           </div>

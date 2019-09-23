@@ -15,11 +15,8 @@ const mixins = {
 
 export default [
   <ul className="code-frame">
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: var(--size-s);
-    background: var(--code-background);
-    box-shadow: var(--size-xs) var(--size-xs) {palette.mediumContrast};
+    margin: 0;
+    padding: 0;
 
     <mixins.loc />
 

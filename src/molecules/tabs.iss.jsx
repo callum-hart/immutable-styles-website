@@ -16,18 +16,26 @@ const tabs = {
   }
 }
 
-export default [
-  <div className="tablist">
-    display: flex;
-    justify-content: flex-end;
-    margin-right: var(--size-xs);
+export default (
+  <div className="tabs">
+    <div className="tablist">
+      display: flex;
+      justify-content: flex-end;
+      margin-right: var(--size-xs);
 
-    <tabs.button.default className="tab-button">
-      background: {palette.mediumContrast};
-    </tabs.button.default>
+      <tabs.button.default className="tab-button">
+        background: {palette.mediumContrast};
+      </tabs.button.default>
 
-    <tabs.button.default className="tab-button active">
-      background: var(--example-heading-color);
-    </tabs.button.default>
+      <tabs.button.default className="tab-button active">
+        background: var(--example-heading-color);
+      </tabs.button.default>
+    </div>
+
+    <div className="tabpanel">
+      padding: var(--size-s);
+      background: var(--code-background);
+      box-shadow: var(--size-xs) var(--size-xs) {palette.mediumContrast};
+    </div>
   </div>
-];
+);

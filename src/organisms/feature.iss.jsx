@@ -37,7 +37,7 @@ export default [
       display: flex;
       align-items: center;
 
-      <div>
+      <div pseudo=":last-of-type">
         padding-left: var(--size-xl);
       </div>
     </section>

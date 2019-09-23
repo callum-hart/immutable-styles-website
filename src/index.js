@@ -1,6 +1,5 @@
 import './browser-resets.iss';
 import './layout.iss';
-// import './utils.iss';
 
 import './atoms/button.iss';
 import './atoms/infographic.iss';
@@ -19,3 +18,9 @@ import './organisms/footer.iss';
 import './organisms/header.iss';
 import './organisms/hero.iss';
 import './organisms/main.iss';
+
+import './examples/simple-example.iss';
+import './examples/mobile-friendly.iss';
+import './examples/composition.iss';
+import './examples/interactions.iss';
+import './examples/ui-states.iss';
