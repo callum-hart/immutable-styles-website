@@ -15,13 +15,6 @@ const mixins = {
 };
 
 export default [
-  <div className="example-composition-result">
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-    justify-content: space-between;
-  </div>,
-
   <mixins.button className="primary-button">
     background: var(--example-background);
     color: var(--example-heading-color);
@@ -38,5 +31,12 @@ export default [
     background: var(--example-heading-color);
     color: #9E9E9D;
     border-color: #9E9E9D;
-  </mixins.button>
+  </mixins.button>,
+
+  <div className="example-composition-result">
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-between;
+  </div>
 ];

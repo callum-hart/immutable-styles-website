@@ -1,9 +1,18 @@
 import { createStyle } from 'immutable-styles';
 
+/*
+TODO: could show form field styles in a new tab
+
+ -----------------------------------------
+| Result | Tooltip.iss.jx | Field.iss.jsx |
+ -----------------------------------------
+*/
+
 export default [
   <div className="form-field">
     <div className="field-label">
       display: flex;
+      align-items: center;
 
       <label>
         margin-right: var(--size-xs);
@@ -15,7 +24,7 @@ export default [
 
     <input className="text-input">
       width: 100%;
-      margin-top: var(--size-xs);
+      margin-top: var(--size-xxs);
       padding: var(--size-xs);
       box-sizing: border-box;
       font-size: var(--size-scale);
@@ -26,19 +35,22 @@ export default [
 
   <div className="tooltip">
     display: flex;
+    align-items: center;
 
     <p className="tooltip-content">
       display: none;
-      margin: 0;
+      margin: 0 0 0 var(--size-xxs);
+      padding: var(--size-xxs) var(--size-xs);
+      border-radius: 4px;
       font-family: 'Muli', sans-serif;
-      background: var(--example-background);
       color: var(--example-heading-color);
+      background: var(--example-background);
     </p>
   </div>,
 
   <div className="tooltip" pseudo=":hover">
     <p className="tooltip-content">
-      display: block;
+      display: flex;
     </p>
   </div>
 ];

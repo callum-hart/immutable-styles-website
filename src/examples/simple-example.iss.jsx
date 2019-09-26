@@ -1,11 +1,14 @@
 import { createStyle } from 'immutable-styles';
 
 export default (
-  <p className="greeting">
-    margin: 0;
-    font-size: var(--size-m);
-    font-family: 'Muli', sans-serif;
-    color: var(--example-background);
-    text-align: center;
-  </p>
+  <fieldset>
+    padding: var(--size-m);
+    border: 2px solid #9E9E9D;
+
+    <legend>
+      font-size: var(--size-s);
+      font-family: 'Muli', sans-serif;
+      color: var(--example-background);
+    </legend>
+  </fieldset>
 );
