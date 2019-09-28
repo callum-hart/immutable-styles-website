@@ -10,15 +10,18 @@ TODO: could show form field styles in a new tab
 
 export default [
   <div className="form-field">
+    margin-bottom: var(--size-m);
+
     <div className="field-label">
       display: flex;
       align-items: center;
+      min-height: var(--size-l);
 
       <label>
-        margin-right: var(--size-xs);
         font-size: var(--size-scale);
         font-family: 'Muli', sans-serif;
         font-weight: 700;
+        color: var(--example-background);
       </label>
     </div>
 
@@ -37,10 +40,15 @@ export default [
     display: flex;
     align-items: center;
 
+    <svg>
+      margin: 0 var(--size-xs);
+      color: #9E9E9D;
+    </svg>
+
     <p className="tooltip-content">
       display: none;
       margin: 0 0 0 var(--size-xxs);
-      padding: var(--size-xxs) var(--size-xs);
+      padding: 6px 12px;
       border-radius: 4px;
       font-family: 'Muli', sans-serif;
       color: var(--example-heading-color);
@@ -49,6 +57,10 @@ export default [
   </div>,
 
   <div className="tooltip" pseudo=":hover">
+    <svg>
+      color: var(--example-background);
+    </svg>
+
     <p className="tooltip-content">
       display: flex;
     </p>
