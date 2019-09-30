@@ -15,7 +15,9 @@
     />
     <link href="./bundle.css" rel="stylesheet" />
 
+    <!-- Move to bottom? -->
     <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/example-ui-states.js"></script>
   </head>
   <body>
     <header>
@@ -540,7 +542,7 @@
               aria-labelledby="tab-simple-example-result"
               hidden
             >
-              <div class="example-result">
+              <div class="example-simple-example-result">
                 <fieldset>
                   <legend>Fieldset title</legend>
                 </fieldset>
@@ -1131,7 +1133,7 @@
               hidden
             >
               <div class="example-result">
-                <form action="#">
+                <form action="#" id="example-ui-states-form">
                   <fieldset>
                     <legend>Fieldset title</legend>
                     <div class="form-field">
@@ -1154,7 +1156,7 @@
                     <section class="row">
                       <div class="col">
                         <button class="secondary-button" type="button">
-                          Reset
+                          Back
                         </button>
                       </div>
                       <div class="col">
@@ -1164,6 +1166,7 @@
                       </div>
                     </section>
                   </fieldset>
+                  <a>Reset</a>
                 </form>
               </div>
             </div>

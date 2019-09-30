@@ -9,7 +9,6 @@ export default [
 
     <div className="col">
       flex: 1;
-      padding: var(--size-s);
     </div>
   </section>,
 

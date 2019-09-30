@@ -1,7 +1,7 @@
 // Adapted from mozilla to support multiple tablists on a single page
 // (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role)
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('DOMContentLoaded', () => {
   const tabLists = document.querySelectorAll('[role="tablist"]');
 
   tabLists.forEach(tabList => {
@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function handleMouseNavigation(tabs) {
   tabs.forEach(tab =>
-    tab.addEventListener("click", e => {
+    tab.addEventListener('click', e => {
       const target = e.target;
       const parent = target.parentNode;
       const grandparent = parent.parentNode;
@@ -26,23 +26,23 @@ function handleMouseNavigation(tabs) {
       parent
         .querySelectorAll('[aria-selected="true"]')
         .forEach(t => {
-          t.setAttribute("aria-selected", false);
-          t.classList.remove("active");
+          t.setAttribute('aria-selected', false);
+          t.classList.remove('active');
         });
 
       // Set this tab as selected
-      target.setAttribute("aria-selected", true);
-      target.classList.add("active");
+      target.setAttribute('aria-selected', true);
+      target.classList.add('active');
 
       // Hide all tab panels
       grandparent
         .querySelectorAll('[role="tabpanel"]')
-        .forEach(p => p.setAttribute("hidden", true));
+        .forEach(p => p.setAttribute('hidden', true));
 
       // Show the selected panel
       grandparent.parentNode
         .querySelector(`#${target.getAttribute("aria-controls")}`)
-        .removeAttribute("hidden");
+        .removeAttribute('hidden');
     })
   );
 }
@@ -50,10 +50,10 @@ function handleMouseNavigation(tabs) {
 function handleKeyboardNavigation(tabList, tabs) {
   let tabFocus = 0;
 
-  tabList.addEventListener("keydown", e => {
+  tabList.addEventListener('keydown', e => {
     // Move right
     if (e.keyCode === 39 || e.keyCode === 37) {
-      tabs[tabFocus].setAttribute("tabindex", -1);
+      tabs[tabFocus].setAttribute('tabindex', -1);
       if (e.keyCode === 39) {
         tabFocus++;
         // If we're at the end, go to the start
@@ -69,7 +69,7 @@ function handleKeyboardNavigation(tabList, tabs) {
         }
       }
 
-      tabs[tabFocus].setAttribute("tabindex", 0);
+      tabs[tabFocus].setAttribute('tabindex', 0);
       tabs[tabFocus].focus();
     }
   });

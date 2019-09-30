@@ -28,8 +28,8 @@ export default [
   </mixins.button>,
 
   <mixins.button className="tertery-button">
-    background: var(--example-heading-color);
-    color: #9E9E9D;
+    background: #9E9E9D;
+    color: var(--example-heading-color);
     border-color: #9E9E9D;
   </mixins.button>,
 
