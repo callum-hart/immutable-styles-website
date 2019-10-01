@@ -1,12 +1,5 @@
 import { createStyle } from 'immutable-styles';
-
-/*
-TODO: could show form field styles in a new tab
-
- -----------------------------------------
-| Result | Tooltip.iss.jx | Field.iss.jsx |
- -----------------------------------------
-*/
+import { focusShadow } from '../constants/accessibility';
 
 export default [
   <div className="form-field">
@@ -15,9 +8,11 @@ export default [
     <div className="field-label">
       display: flex;
       align-items: center;
+      justify-content: space-between;
       min-height: var(--size-l);
 
       <label>
+        margin-left: var(--size-xs);
         font-size: var(--size-scale);
         font-family: 'Muli', sans-serif;
         font-weight: 700;
@@ -27,12 +22,19 @@ export default [
 
     <input className="text-input">
       width: 100%;
-      margin-top: var(--size-xxs);
       padding: var(--size-xs);
       box-sizing: border-box;
       font-size: var(--size-scale);
-      border: 1px solid #9E9E9D;
-      border-radius: 5px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 3px solid #9E9E9D;
+      background: #9e9e9d5c;
+    </input>
+
+    <input className="text-input" pseudo=":focus">
+      { focusShadow };
+      background: #F6F4F2;
     </input>
   </div>,
 
@@ -49,7 +51,6 @@ export default [
       display: none;
       margin: 0 0 0 var(--size-xxs);
       padding: 6px 12px;
-      border-radius: 4px;
       font-family: 'Muli', sans-serif;
       color: var(--example-heading-color);
       background: var(--example-background);
@@ -58,7 +59,7 @@ export default [
 
   <div className="tooltip" pseudo=":hover">
     <svg>
-      color: var(--example-background);
+      color: #57D2F1;
     </svg>
 
     <p className="tooltip-content">

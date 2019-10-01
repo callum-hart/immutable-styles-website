@@ -1,6 +1,7 @@
 import { createStyle } from 'immutable-styles';
 import { transparentize } from 'polished';
 import { palette } from '../constants/palette';
+import { focusShadow } from '../constants/accessibility';
 
 export default [
   <a className="link">
@@ -15,5 +16,9 @@ export default [
 
   <a className="link" pseudo=":hover">
     border-bottom-style: solid;
+  </a>,
+
+  <a className="link" pseudo=":focus">
+    { focusShadow };
   </a>
 ];

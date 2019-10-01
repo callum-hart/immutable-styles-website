@@ -981,11 +981,18 @@
                   <div class="field-label">
                     <label for="first-name">First name</label>
                     <div class="tooltip">
+                      <p
+                        class="tooltip-content"
+                        id="example-interactions-tooltip"
+                      >
+                        <!-- TODO: come up with better copy -->
+                        Tooltip Tooltip Tooltip Tooltip Tooltip
+                      </p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
-                        width="20"
-                        height="20"
+                        width="18"
+                        height="18"
                       >
                         <g fill="none">
                           <path d="M-2-2h24v24H-2z" />
@@ -995,9 +1002,6 @@
                           />
                         </g>
                       </svg>
-                      <p class="tooltip-content" id="first-name-tooltip">
-                        Tooltip Tooltip Tooltip Tooltip Tooltip
-                      </p>
                     </div>
                   </div>
                   <input
@@ -1005,7 +1009,7 @@
                     type="text"
                     name="first-name"
                     id="first-name"
-                    aria-describedby="first-name-tooltip"
+                    aria-describedby="example-interactions-tooltip"
                   />
                 </div>
               </div>
@@ -1140,18 +1144,36 @@
                       <div class="field-label">
                         <label for="first-name">First name</label>
                         <div class="tooltip">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
-                            <g fill="none">
-                              <path d="M-2-2h24v24H-2z"></path>
-                              <path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm1 17H9v-2h2v2zm2.07-7.75l-.9.92c-.5.51-.86.97-1.04 1.69-.08.32-.13.68-.13 1.14H9v-.5a3.997 3.997 0 0 1 1.17-2.83l1.24-1.26c.46-.44.68-1.1.55-1.8a1.99 1.99 0 0 0-1.39-1.53c-1.11-.31-2.14.32-2.47 1.27-.12.37-.43.65-.82.65h-.3C6.4 7 6 6.44 6.16 5.88a4.008 4.008 0 0 1 3.23-2.83c1.52-.24 2.97.55 3.87 1.8 1.18 1.63.83 3.38-.19 4.4z" fill="currentColor"></path>
-                            </g>
-                          </svg>
-                          <p class="tooltip-content" id="first-name-tooltip">
+                          <p
+                            class="tooltip-content"
+                            id="example-ui-states-tooltip"
+                          >
+                            <!-- TODO: come up with better copy -->
                             Tooltip Tooltip Tooltip Tooltip Tooltip
                           </p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            width="18"
+                            height="18"
+                          >
+                            <g fill="none">
+                              <path d="M-2-2h24v24H-2z"></path>
+                              <path
+                                d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm1 17H9v-2h2v2zm2.07-7.75l-.9.92c-.5.51-.86.97-1.04 1.69-.08.32-.13.68-.13 1.14H9v-.5a3.997 3.997 0 0 1 1.17-2.83l1.24-1.26c.46-.44.68-1.1.55-1.8a1.99 1.99 0 0 0-1.39-1.53c-1.11-.31-2.14.32-2.47 1.27-.12.37-.43.65-.82.65h-.3C6.4 7 6 6.44 6.16 5.88a4.008 4.008 0 0 1 3.23-2.83c1.52-.24 2.97.55 3.87 1.8 1.18 1.63.83 3.38-.19 4.4z"
+                                fill="currentColor"
+                              ></path>
+                            </g>
+                          </svg>
                         </div>
                       </div>
-                      <input class="text-input" type="text" name="first-name" id="first-name" aria-describedby="first-name-tooltip">
+                      <input
+                        class="text-input"
+                        type="text"
+                        name="first-name"
+                        id="first-name"
+                        aria-describedby="example-ui-states-tooltip"
+                      />
                     </div>
                     <section class="row">
                       <div class="col">

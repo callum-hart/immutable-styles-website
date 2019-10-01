@@ -1,5 +1,6 @@
 import { createStyle, createMixin } from 'immutable-styles';
 import { palette } from '../constants/palette';
+import { focusShadow } from '../constants/accessibility';
 
 const button = {
   default: createMixin(
@@ -10,7 +11,6 @@ const button = {
       text-decoration: none;
       text-align: center;
       padding: var(--size-xs) var(--size-m);
-      border-radius: 5px;
       color: {palette.lowContrast};
     </a>
   ),
@@ -18,19 +18,26 @@ const button = {
     <a pseudo=":hover">
       text-decoration: underline;
     </a>
+  ),
+  focus: createMixin(
+    <a pseudo=":focus">
+      { focusShadow }
+    </a>
   )
 };
 
 export default [
   <button.default className="button-primary">
     background: {palette.primaryCta};
+    box-shadow: 4px 4px #86854B;
   </button.default>,
-
   <button.hover className="button-primary" />,
+  <button.focus className="button-primary" />,
 
   <button.default className="button-secondary">
     background: {palette.secondaryCta};
+    box-shadow: 4px 4px #9E9E9D;
   </button.default>,
-
   <button.hover className="button-secondary" />,
+  <button.focus className="button-secondary" />
 ];
