@@ -29,7 +29,7 @@ export default [
       border-right: none;
       border-left: none;
       border-bottom: 3px solid #9E9E9D;
-      background: #9e9e9d5c;
+      background: #D6D5D4;
     </input>
 
     <input className="text-input" pseudo=":focus">
@@ -50,7 +50,7 @@ export default [
     <p className="tooltip-content">
       display: none;
       margin: 0 0 0 var(--size-xxs);
-      padding: 6px 12px;
+      padding: var(--size-xs) var(--size-s);
       font-family: 'Muli', sans-serif;
       color: var(--example-heading-color);
       background: var(--example-background);
@@ -59,7 +59,7 @@ export default [
 
   <div className="tooltip" pseudo=":hover">
     <svg>
-      color: #57D2F1;
+      color: var(--example-background);
     </svg>
 
     <p className="tooltip-content">

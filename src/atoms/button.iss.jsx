@@ -29,14 +29,12 @@ const button = {
 export default [
   <button.default className="button-primary">
     background: {palette.primaryCta};
-    box-shadow: 4px 4px #86854B;
   </button.default>,
   <button.hover className="button-primary" />,
   <button.focus className="button-primary" />,
 
   <button.default className="button-secondary">
     background: {palette.secondaryCta};
-    box-shadow: 4px 4px #9E9E9D;
   </button.default>,
   <button.hover className="button-secondary" />,
   <button.focus className="button-secondary" />

@@ -11,7 +11,7 @@ export default [
     padding: 0 2px;
     color: {palette.tertiaryCta};
     background: {transparentize(0.8, palette.tertiaryCta)};
-    border-bottom: 1px dotted;
+    border-bottom: 1px solid;
   </a>,
 
   <a className="link" pseudo=":hover">
