@@ -1,5 +1,7 @@
 import { createStyle } from 'immutable-styles';
-import {  palette} from '../constants/palette';
+
+import { fontMono } from '../constants/typography';
+import { palette} from '../constants/palette';
 import { to_s, from_s_to_m } from '../constants/breakpoint';
 
 export default [
@@ -17,11 +19,11 @@ export default [
   </svg>,
 
   <text className="svg-text">
-    font-family: 'IBM Plex Mono', monospace;
+    { fontMono }
   </text>,
 
   <text className="svg-text hide-to-s">
-    font-family: 'IBM Plex Mono', monospace;
+    { fontMono }
   </text>,
 
   <text {...to_s} className="svg-text hide-to-s">

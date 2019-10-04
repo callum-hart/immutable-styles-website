@@ -1,4 +1,6 @@
 import { createStyle } from 'immutable-styles';
+
+import { fontMono } from '../constants/typography';
 import { palette } from '../constants/palette';
 import { to_s, from_s } from '../constants/breakpoint';
 
@@ -16,10 +18,9 @@ export default (
     </svg>
 
     <p className="logo-text">
+      { fontMono }
       max-width: 16ch;
       text-indent: 1ch;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 1rem;
       color: {palette.mediumContrast};
     </p>
   </div>

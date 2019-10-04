@@ -1,13 +1,12 @@
 import { createStyle, createMixin } from 'immutable-styles';
+import { fontMono } from '../constants/typography';
 import { palette } from '../constants/palette';
 
 const mixins = {
   loc: createMixin(
     <li>
+      { fontMono }
       list-style: none;
-      font-size: var(--size-scale);
-      font-family: 'IBM Plex Mono', monospace;
-      font-weight: 500;
       color: var(--code-color);
     </li>
   )

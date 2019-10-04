@@ -1,12 +1,12 @@
 import { createStyle } from 'immutable-styles';
 import { transparentize } from 'polished';
 import { palette } from '../constants/palette';
+import { fontSans } from '../constants/typography';
 import { focusShadow } from '../constants/accessibility';
 
 export default [
   <a className="link">
-    font-size: var(--size-scale);
-    font-family: 'Muli', sans-serif;
+    { fontSans }
     text-decoration: none;
     padding: 0 2px;
     color: {palette.tertiaryCta};
@@ -19,6 +19,6 @@ export default [
   </a>,
 
   <a className="link" pseudo=":focus">
-    { focusShadow };
+    { focusShadow }
   </a>
 ];

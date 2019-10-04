@@ -1,5 +1,6 @@
 import { createStyle, createMixin } from 'immutable-styles';
 import { palette } from '../constants/palette';
+import { fontSans, fontSans_xl, fontSans_m } from '../constants/typography';
 import { to_xs, from_xs_to_s, from_s_to_m, from_m_to_l, from_l } from '../constants/breakpoint';
 
 export default [
@@ -34,30 +35,22 @@ export default [
   </body>,
 
   <h1>
-    font-size: var(--size-xl);
-    font-family: 'Muli', sans-serif;
-    font-weight: 800;
+    { fontSans_xl }
   </h1>,
 
   <h2>
-    font-size: var(--size-m);
-    font-family: 'Muli', sans-serif;
-    font-weight: 600;
+    { fontSans_m }
   </h2>,
 
   <h3>
-    font-size: var(--size-m);
-    font-family: 'Muli', sans-serif;
-    font-weight: 800;
+    { fontSans_m }
     line-height: var(--size-ratio);
     margin-top: var(--size-l);
     margin-bottom: 0;
   </h3>,
 
   <p>
-    font-size: var(--size-scale);
-    font-family: 'Muli', sans-serif;
-    font-weight: 600;
+    { fontSans }
     line-height: var(--size-ratio);
     margin-top: var(--size-m);
     margin-bottom: 0;

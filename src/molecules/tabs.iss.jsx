@@ -1,14 +1,13 @@
 import { createStyle, createMixin } from 'immutable-styles';
 import { palette } from '../constants/palette';
+import { fontSans } from '../constants/typography';
 import { focusShadow, composedFocusShadow } from '../constants/accessibility';
 
 const tabs = {
   button: {
     default: createMixin(
       <button>
-        font-size: var(--size-scale);
-        font-family: 'Muli', sans-serif;
-        font-weight: 700;
+        { fontSans }
         padding: var(--size-xs) var(--size-m);
         color: var(--example-background);
         border: none;
@@ -16,7 +15,7 @@ const tabs = {
     ),
     focus: createMixin(
       <button pseudo=":focus">
-        { focusShadow };
+        { focusShadow }
       </button>
     )
   }

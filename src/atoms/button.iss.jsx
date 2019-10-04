@@ -1,13 +1,12 @@
 import { createStyle, createMixin } from 'immutable-styles';
 import { palette } from '../constants/palette';
+import { fontSans } from '../constants/typography';
 import { focusShadow } from '../constants/accessibility';
 
 const button = {
   default: createMixin(
     <a>
-      font-size: var(--size-scale);
-      font-family: 'Muli', sans-serif;
-      font-weight: 700;
+      { fontSans }
       text-decoration: none;
       text-align: center;
       padding: var(--size-xs) var(--size-m);
