@@ -1,6 +1,7 @@
 import './browser-resets.iss';
 import './layout.iss';
 
+import './atoms/band.iss';
 import './atoms/button.iss';
 import './atoms/infographic.iss';
 import './atoms/link.iss';

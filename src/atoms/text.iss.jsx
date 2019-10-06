@@ -3,6 +3,17 @@ import { palette } from '../constants/palette';
 import { fontSans, fontSans_xl, fontSans_m } from '../constants/typography';
 import { to_xs, from_xs_to_s, from_s_to_m, from_m_to_l, from_l } from '../constants/breakpoint';
 
+const mixins = {
+  h3: createMixin(
+    <h3>
+      { fontSans_m }
+      line-height: var(--size-ratio);
+      margin-top: var(--size-l);
+      margin-bottom: 0;
+    </h3>
+  )
+};
+
 export default [
   <body>
     --size-ratio: 1.4;
@@ -42,12 +53,13 @@ export default [
     { fontSans_m }
   </h2>,
 
-  <h3>
-    { fontSans_m }
-    line-height: var(--size-ratio);
-    margin-top: var(--size-l);
-    margin-bottom: 0;
-  </h3>,
+  <mixins.h3 className="heading-dark">
+    color: {palette.lowContrast};
+  </mixins.h3>,
+
+  <mixins.h3 className="heading-light">
+    color: {palette.highContrast};
+  </mixins.h3>,
 
   <p>
     { fontSans }

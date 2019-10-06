@@ -3,50 +3,67 @@ import { palette } from '../constants/palette';
 import { fontSans } from '../constants/typography';
 import { focusShadow, composedFocusShadow } from '../constants/accessibility';
 
-const tabs = {
-  button: {
-    default: createMixin(
-      <button>
-        { fontSans }
-        padding: var(--size-xs) var(--size-m);
-        color: var(--mode-background);
-        border: none;
-      </button>
-    ),
-    focus: createMixin(
-      <button pseudo=":focus">
-        { focusShadow }
-      </button>
-    )
-  }
-}
+const mixins = {
+  button: createMixin(
+    <button>
+      { fontSans }
+      border: none;
+      padding: var(--size-xs) var(--size-m);
+    </button>
+  )
+};
 
-export default (
-  <div className="tabs">
+export default [
+  <div className="tablist">
+    display: flex;
+    justify-content: flex-end;
+    margin-right: var(--size-xs);
+
+    <mixins.button className="tab-button">
+      background: {palette.mediumContrast};
+    </mixins.button>
+
+    <button pseudo=":focus" className="tab-button">
+      { focusShadow }
+    </button>
+
+    <button pseudo=":focus" className="tab-button active">
+      { focusShadow }
+    </button>
+  </div>,
+
+  <div className="tabpanel">
+    padding: var(--size-s);
+    box-shadow: var(--size-xs) var(--size-xs) {palette.mediumContrast};
+  </div>,
+
+  <div pseudo=":focus" className="tabpanel">
+    { composedFocusShadow(`var(--size-xs) var(--size-xs) ${palette.mediumContrast}`) };
+  </div>,
+
+  <div className="tabs-dark">
     <div className="tablist">
-      display: flex;
-      justify-content: flex-end;
-      margin-right: var(--size-xs);
-
-      <tabs.button.default className="tab-button">
-        background: {palette.mediumContrast};
-      </tabs.button.default>
-      <tabs.button.focus className="tab-button" />
-
-      <tabs.button.default className="tab-button active">
-        background: var(--mode-color);
-      </tabs.button.default>
-      <tabs.button.focus className="tab-button active" />
+      <mixins.button className="tab-button active">
+        background: {palette.lowContrast};
+        color: {palette.highContrast};
+      </mixins.button>
     </div>
 
     <div className="tabpanel">
-      padding: var(--size-s);
-      background: var(--code-background);
-      box-shadow: var(--size-xs) var(--size-xs) {palette.mediumContrast};
+      background: {palette.lowContrast};
+    </div>
+  </div>,
+
+  <div className="tabs-light">
+    <div className="tablist">
+      <mixins.button className="tab-button active">
+        background: {palette.highContrast};
+        color: {palette.lowContrast};
+      </mixins.button>
     </div>
 
-    <div className="tabpanel" pseudo=":focus">
-      { composedFocusShadow(`var(--size-xs) var(--size-xs) ${palette.mediumContrast}`) };
+    <div className="tabpanel">
+      background: {palette.highContrast};
     </div>
   </div>
-);
+];
