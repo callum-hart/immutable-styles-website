@@ -6,13 +6,13 @@ const fontSans = `
 
 const fontSans_xl = `
   font-family: 'Muli', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: var(--size-xl);
 `;
 
 const fontSans_m = `
   font-family: 'Muli', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: var(--size-m);
 `;
 
@@ -24,6 +24,7 @@ const fontSans_s = `
 
 const fontMono = `
   font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
   font-size: var(--size-scale);
 `;
 

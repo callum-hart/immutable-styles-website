@@ -9,7 +9,7 @@ const tabs = {
       <button>
         { fontSans }
         padding: var(--size-xs) var(--size-m);
-        color: var(--example-background);
+        color: var(--mode-background);
         border: none;
       </button>
     ),
@@ -34,7 +34,7 @@ export default (
       <tabs.button.focus className="tab-button" />
 
       <tabs.button.default className="tab-button active">
-        background: var(--example-heading-color);
+        background: var(--mode-color);
       </tabs.button.default>
       <tabs.button.focus className="tab-button active" />
     </div>

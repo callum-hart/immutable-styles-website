@@ -16,18 +16,18 @@ const mixins = {
 
 export default [
   <mixins.button className="primary-button">
-    background: var(--example-background);
-    color: var(--example-heading-color);
-    border-color: var(--example-background);
+    background: var(--mode-background);
+    color: var(--mode-color);
+    border-color: var(--mode-background);
   </mixins.button>,
   <mixins.button className="primary-button" pseudo=":focus">
     { focusShadow }
   </mixins.button>,
 
   <mixins.button className="secondary-button">
-    background: var(--example-heading-color);
-    color: var(--example-background);
-    border-color: var(--example-background);
+    background: var(--mode-color);
+    color: var(--mode-background);
+    border-color: var(--mode-background);
   </mixins.button>,
   <mixins.button className="secondary-button" pseudo=":focus">
     { focusShadow }
@@ -35,7 +35,7 @@ export default [
 
   <mixins.button className="tertery-button">
     background: #9E9E9D;
-    color: var(--example-heading-color);
+    color: var(--mode-color);
     border-color: #9E9E9D;
   </mixins.button>,
   <mixins.button className="tertery-button" pseudo=":focus">

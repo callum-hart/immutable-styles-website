@@ -9,7 +9,7 @@ export default (
 
     <legend>
       { fontSans_s }
-      color: var(--example-background);
+      color: var(--mode-background);
     </legend>
   </fieldset>
 );

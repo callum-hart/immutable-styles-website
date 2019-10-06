@@ -2,11 +2,9 @@ import { createStyle } from 'immutable-styles';
 import { palette } from '../constants/palette';
 
 export default [
-  // TODO: rename variables to something less specific (i.e: --mode-color, --mode-background)
-
   <div pseudo=":nth-child(even)" className="example">
-    --example-background: {palette.highContrast};
-    --example-heading-color: {palette.lowContrast};
+    --mode-background: {palette.highContrast};
+    --mode-color: {palette.lowContrast};
     --code-background: {palette.lowContrast};
     --code-color: {palette.highContrast};
     --code-comment-color: {palette.highContrast};
@@ -20,8 +18,8 @@ export default [
   </div>,
 
   <div pseudo=":nth-child(odd)" className="example">
-    --example-background: {palette.lowContrast};
-    --example-heading-color: {palette.highContrast};
+    --mode-background: {palette.lowContrast};
+    --mode-color: {palette.highContrast};
     --code-background: {palette.highContrast};
     --code-color: {palette.lowContrast};
     --code-comment-color: {palette.lowContrast};
@@ -38,7 +36,7 @@ export default [
     overflow: auto;
     padding-bottom: var(--size-xl);
     position: relative;
-    background-color: var(--example-background);
+    background-color: var(--mode-background);
 
     <section className="container">
       min-width: 1000px;
@@ -49,7 +47,7 @@ export default [
         padding-right: var(--size-xl);
 
         <h3>
-          color: var(--example-heading-color);
+          color: var(--mode-color);
         </h3>
       </div>
 
@@ -61,18 +59,3 @@ export default [
     </section>
   </div>
 ];
-
-
-/**
- * - Simple Example
- *  - Fieldset
- * - Mobile Friendly
- *  - Grid
- * - Composition
- *  - Buttons
- * - Interactions
- *  - Form field tooltip
- * - UI States
- *  - Form with loading state (uses Fieldset, Grid, Buttons, Field from previous examples)
- *  - <form action="#"></form>
- */

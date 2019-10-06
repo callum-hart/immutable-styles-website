@@ -3,26 +3,24 @@ import { palette } from '../constants/palette';
 import { to_s, from_s } from '../constants/breakpoint';
 
 export default [
-  // TODO: rename variables to something less specific (i.e: --mode-color, --mode-background)
-
   <div pseudo=":nth-child(even)" className="feature">
-    --feature-background: {palette.highContrast};
-    --feature-heading-color: {palette.lowContrast};
+    --mode-background: {palette.highContrast};
+    --mode-color: {palette.lowContrast};
   </div>,
 
   <div pseudo=":nth-child(odd)" className="feature">
-    --feature-background: {palette.lowContrast};
-    --feature-heading-color: {palette.highContrast};
+    --mode-background: {palette.lowContrast};
+    --mode-color: {palette.highContrast};
   </div>,
 
   <div className="feature">
     padding-bottom: var(--size-xl);
-    background-color: var(--feature-background);
+    background-color: var(--mode-background);
 
     <section className="container">
       <div>
         <h3>
-          color: var(--feature-heading-color);
+          color: var(--mode-color);
         </h3>
       </div>
     </section>

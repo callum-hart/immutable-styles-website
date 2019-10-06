@@ -15,7 +15,7 @@ export default [
       <label>
         { fontSans }
         margin-left: var(--size-xs);
-        color: var(--example-background);
+        color: var(--mode-background);
       </label>
     </div>
 
@@ -51,14 +51,14 @@ export default [
       display: none;
       margin: 0 0 0 var(--size-xxs);
       padding: var(--size-xs) var(--size-s);
-      color: var(--example-heading-color);
-      background: var(--example-background);
+      color: var(--mode-color);
+      background: var(--mode-background);
     </p>
   </div>,
 
   <div className="tooltip" pseudo=":hover">
     <svg>
-      color: var(--example-background);
+      color: var(--mode-background);
     </svg>
 
     <p className="tooltip-content">
