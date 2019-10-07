@@ -1,6 +1,7 @@
 import { createStyle, createMixin } from 'immutable-styles';
-import { fontSans } from '../constants/typography';
 import { focusShadow } from '../constants/accessibility';
+import { fontSans } from '../constants/typography';
+import { palette } from '../constants/palette';
 
 const mixins = {
   button: createMixin(
@@ -16,27 +17,27 @@ const mixins = {
 
 export default [
   <mixins.button className="primary-button">
-    background: var(--mode-background);
-    color: var(--mode-color);
-    border-color: var(--mode-background);
+    background: {palette.highContrast};
+    color: {palette.lowContrast};
+    border-color: {palette.highContrast};
   </mixins.button>,
   <mixins.button className="primary-button" pseudo=":focus">
     { focusShadow }
   </mixins.button>,
 
   <mixins.button className="secondary-button">
-    background: var(--mode-color);
-    color: var(--mode-background);
-    border-color: var(--mode-background);
+    background: {palette.lowContrast};
+    color: {palette.highContrast};
+    border-color: {palette.highContrast};
   </mixins.button>,
   <mixins.button className="secondary-button" pseudo=":focus">
     { focusShadow }
   </mixins.button>,
 
   <mixins.button className="tertery-button">
-    background: #9E9E9D;
-    color: var(--mode-color);
-    border-color: #9E9E9D;
+    background: {palette.mediumContrast};
+    color: {palette.lowContrast};
+    border-color: {palette.mediumContrast};
   </mixins.button>,
   <mixins.button className="tertery-button" pseudo=":focus">
     { focusShadow }

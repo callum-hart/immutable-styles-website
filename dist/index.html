@@ -506,41 +506,41 @@
                 >
                   <code>
                     <ul class="code-frame">
-                      <li>
+                      <li class="loc">
                         <span class="comment">/* @jsx createStyle */</span>
                       </li>
-                      <li>
+                      <li class="loc">
                         <span class="keyword">import</span> { createStyle }
                         <span class="keyword">from</span>
                         <span class="string">'immutable-styles'</span>;
                       </li>
-                      <li class="stack-up">
+                      <li class="loc stack-up">
                         <span class="keyword">export default</span> (
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;p</span>
                         <span class="attribute">className</span>=<span
                           class="string"
                           >"greeting"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">font-family</span>: 'Muli',
                         sans-serif;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">font-size</span>: 2rem;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">line-height</span>: 4rem;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">color</span>: hotpink;
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;/p&gt;</span>
                       </li>
-                      <li>);</li>
+                      <li class="loc">);</li>
                     </ul>
                   </code>
                 </div>
@@ -553,11 +553,9 @@
                   aria-labelledby="tab-simple-example-result"
                   hidden
                 >
-                  <div class="example-simple-example-result">
-                    <fieldset>
-                      <legend>Fieldset title</legend>
-                    </fieldset>
-                  </div>
+                  <fieldset>
+                    <legend>Fieldset title</legend>
+                  </fieldset>
                 </div>
               </div>
             </div>
@@ -623,26 +621,26 @@
                 >
                   <code>
                     <ul class="code-frame">
-                      <li>
+                      <li class="loc">
                         <span class="comment">/* @jsx createStyle */</span>
                       </li>
-                      <li>
+                      <li class="loc">
                         <span class="keyword">import</span> { createStyle }
                         <span class="keyword">from</span>
                         <span class="string">'immutable-styles'</span>;
                       </li>
-                      <li class="stack-up">
+                      <li class="loc stack-up">
                         <span class="keyword">const</span> tablet =
                         <span class="string">'768'</span>;
                       </li>
-                      <li>
+                      <li class="loc">
                         <span class="keyword">const</span> desktop =
                         <span class="string">'769'</span>;
                       </li>
-                      <li class="stack-up">
+                      <li class="loc stack-up">
                         <span class="keyword">export default</span> [
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;a</span>
                         <span class="attribute">className</span>=<span
                           class="string"
@@ -653,14 +651,14 @@
                           >{tablet}</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">font-size</span>: 1.2rem;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">padding</span>: 16px;
                       </li>
-                      <li class="tab-1"><span class="tag">&lt;/a&gt;</span>,</li>
-                      <li class="tab-1 stack-up">
+                      <li class="loc tab-1"><span class="tag">&lt;/a&gt;</span>,</li>
+                      <li class="loc tab-1 stack-up">
                         <span class="tag">&lt;a</span>
                         <span class="attribute">className</span>=<span
                           class="string"
@@ -671,16 +669,16 @@
                           >{desktop}</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">font-size</span>: 1rem;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">padding</span>: 12px;
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;/a&gt;</span>
                       </li>
-                      <li>];</li>
+                      <li class="loc">];</li>
                     </ul>
                   </code>
                 </div>
@@ -759,83 +757,83 @@
                 >
                   <code>
                     <ul class="code-frame">
-                      <li>
+                      <li class="loc">
                         <span class="comment">/* @jsx createStyle */</span>
                       </li>
-                      <li><span class="keyword">import</span> {</li>
-                      <li class="tab-1">createStyle,</li>
-                      <li class="tab-1">createMixin</li>
-                      <li>
+                      <li class="loc"><span class="keyword">import</span> {</li>
+                      <li class="loc tab-1">createStyle,</li>
+                      <li class="loc tab-1">createMixin</li>
+                      <li class="loc">
                         } <span class="keyword">from</span
                         ><span class="string"> 'immutable-styles'</span>;
                       </li>
-                      <li class="stack-up">
+                      <li class="loc stack-up">
                         <span class="keyword">const</span> mixins = {
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         button: <span class="function">createMixin</span>(
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="tag">&lt;button&gt;</span>
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">padding</span>: 10px 20px;
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">border</span>: none;
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">font-size</span>: 1rem;
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">border-radius</span>: 3px;
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">cursor</span>: pointer;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="tag">&lt;/button&gt;</span>
                       </li>
-                      <li class="tab-1">)</li>
-                      <li>};</li>
-                      <li class="stack-up">
+                      <li class="loc tab-1">)</li>
+                      <li class="loc">};</li>
+                      <li class="loc stack-up">
                         <span class="keyword">export default</span> [
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;mixins.button</span>
                         <span class="attribute">className</span>=<span
                           class="string"
                           >"btn-primary"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">background</span>: hotpink;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">color</span>: ivory;
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;/mixins.button</span
                         ><span class="tag">&gt;</span>,
                       </li>
-                      <li class="tab-1 stack-up">
+                      <li class="loc tab-1 stack-up">
                         <span class="tag">&lt;mixins.button</span>
                         <span class="attribute">className</span>=<span
                           class="string"
                           >"btn-secondary"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">background</span>: ivory;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">color</span>: hotpink;
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;/mixins.button</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li>
+                      <li class="loc">
                         ];
                       </li>
                     </ul>
@@ -919,48 +917,48 @@
                 >
                   <code>
                     <ul class="code-frame">
-                      <li>
+                      <li class="loc">
                         <span class="comment">/* @jsx createStyle */</span>
                       </li>
-                      <li>
+                      <li class="loc">
                         <span class="keyword">import</span> { createStyle }
                         <span class="keyword">from</span>
                         <span class="string">'immutable-styles'</span>;
                       </li>
-                      <li class="stack-up">
+                      <li class="loc stack-up">
                         <span class="keyword">export default</span> [
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;div</span>
                         <span class="attribute">className</span>=<span
                           class="string"
                           >"tooltip"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">position</span>: relative;
                       </li>
-                      <li class="tab-2 stack-up">
+                      <li class="loc tab-2 stack-up">
                         <span class="tag">&lt;p</span>
                         <span class="attribute">className</span>=<span
                           class="string"
                           >"content"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">display</span>: none;
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">position</span>: absolute;
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">width</span>: 200px;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="tag">&lt;/p&gt;</span>
                       </li>
-                      <li class="tab-1"><span class="tag">&lt;/div&gt;</span>,</li>
-                      <li class="tab-1 stack-up">
+                      <li class="loc tab-1"><span class="tag">&lt;/div&gt;</span>,</li>
+                      <li class="loc tab-1 stack-up">
                         <span class="tag">&lt;div</span>
                         <span class="attribute">className</span>=<span
                           class="string"
@@ -969,23 +967,23 @@
                           >":hover"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="tag">&lt;p</span>
                         <span class="attribute">className</span>=<span
                           class="string"
                           >"content"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-3">
+                      <li class="loc tab-3">
                         <span class="property-name">display</span>: block;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="tag">&lt;/p&gt;</span>
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;/div&gt;</span>
                       </li>
-                      <li>
+                      <li class="loc">
                         ];
                       </li>
                     </ul>
@@ -1002,14 +1000,13 @@
                   <div class="example-result">
                     <div class="form-field">
                       <div class="field-label">
-                        <label for="first-name">First name</label>
+                        <label for="first-name">Label</label>
                         <div class="tooltip">
                           <p
                             class="tooltip-content"
                             id="example-interactions-tooltip"
                           >
-                            <!-- TODO: come up with better copy -->
-                            Tooltip Tooltip Tooltip Tooltip Tooltip
+                            Tooltip content
                           </p>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -1098,60 +1095,60 @@
                 >
                   <code>
                     <ul class="code-frame">
-                      <li>
+                      <li class="loc">
                         <span class="comment">/* @jsx createStyle */</span>
                       </li>
-                      <li>
+                      <li class="loc">
                         <span class="keyword">import</span> { createStyle }
                         <span class="keyword">from</span>
                         <span class="string">'immutable-styles'</span>;
                       </li>
-                      <li>
+                      <li class="loc">
                         <span class="keyword">import</span> { darken }
                         <span class="keyword">from</span>
                         <span class="string">'polished'</span>;
                       </li>
-                      <li class="stack-up">
+                      <li class="loc stack-up">
                         <span class="keyword">const</span> formBackground =
                         <span class="string">'white'</span>;
                       </li>
-                      <li class="stack-up">
+                      <li class="loc stack-up">
                         <span class="keyword">export default</span> [
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;form</span>
                         <span class="attribute">className</span>=<span
                           class="string"
                           >"checkout"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">background</span>: {
                         formBackground };
                       </li>
-                      <li class="tab-1"><span class="tag">&lt;/form&gt;</span>,</li>
-                      <li class="tab-1 stack-up">
+                      <li class="loc tab-1"><span class="tag">&lt;/form&gt;</span>,</li>
+                      <li class="loc tab-1 stack-up">
                         <span class="tag">&lt;form</span>
                         <span class="attribute">className</span>=<span
                           class="string"
                           >"checkout checkout--loading"</span
                         ><span class="tag">&gt;</span>
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">background</span>: {
                         <span class="function">darken</span>(0.2, formBackground )
                         };
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">opacity</span>: 0.6;
                       </li>
-                      <li class="tab-2">
+                      <li class="loc tab-2">
                         <span class="property-name">pointer-events</span>: none;
                       </li>
-                      <li class="tab-1">
+                      <li class="loc tab-1">
                         <span class="tag">&lt;/form&gt;</span>
                       </li>
-                      <li>];</li>
+                      <li class="loc">];</li>
                     </ul>
                   </code>
                 </div>
@@ -1169,14 +1166,13 @@
                         <legend>Fieldset title</legend>
                         <div class="form-field">
                           <div class="field-label">
-                            <label for="first-name">First name</label>
+                            <label for="first-name">Label</label>
                             <div class="tooltip">
                               <p
                                 class="tooltip-content"
                                 id="example-ui-states-tooltip"
                               >
-                                <!-- TODO: come up with better copy -->
-                                Tooltip Tooltip Tooltip Tooltip Tooltip
+                                Tooltip content
                               </p>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"

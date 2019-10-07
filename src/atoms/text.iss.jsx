@@ -53,12 +53,12 @@ export default [
     { fontSans_m }
   </h2>,
 
-  <mixins.h3 className="heading-dark">
-    color: {palette.lowContrast};
-  </mixins.h3>,
-
   <mixins.h3 className="heading-light">
     color: {palette.highContrast};
+  </mixins.h3>,
+
+  <mixins.h3 className="heading-dark">
+    color: {palette.lowContrast};
   </mixins.h3>,
 
   <p>

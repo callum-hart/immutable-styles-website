@@ -39,8 +39,15 @@ export default [
 
     <section className="row">
       <div className="col">
-        min-height: 100px;
         background: #BFD9B2;
+      </div>
+
+      <div maxWidth={to_m} className="col">
+        min-height: 100px;
+      </div>
+
+      <div minWidth={from_m} className="col">
+        min-height: 200px;
       </div>
     </section>
   </div>
