@@ -13,10 +13,6 @@ const mixins = {
 };
 
 export default [
-  // TODO: handl light / dark code frames
-  <ul className="code-frame-light"></ul>,
-  <ul className="code-frame-dark"></ul>,
-
   <ul className="code-frame">
     margin: 0;
     padding: 0;
@@ -40,7 +36,6 @@ export default [
     text-indent: 6ch;
   </mixins.loc>,
 
-  // TODO: more than 2 classes doesn't seem to work
   <mixins.loc className="loc tab-1 stack-up">
     text-indent: 2ch;
     margin-top: var(--size-s);
@@ -56,34 +51,39 @@ export default [
     margin-top: var(--size-s);
   </mixins.loc>,
 
-  <span className="comment">
-    color: var(--code-comment-color);
-  </span>,
-
   <span className="keyword">
-    color: var(--code-keyword-color);
+    color: {palette.tertiaryCta};
   </span>,
 
   <span className="tag">
-    color: var(--code-tag-color);
+    color: #38B4D4;
   </span>,
 
-  <span className="attribute">
-    color: var(--code-attribute-color);
+  <span className="attribute-light">
+    color: {palette.highContrast};
   </span>,
 
-  <span className="function">
-    color: var(--code-function-color);
+  <span className="attribute-dark">
+    color: {palette.lowContrast};
+  </span>,
+
+  <span className="function-light">
+    color: {palette.highContrast};
+  </span>,
+
+  <span className="function-dark">
+    color: {palette.lowContrast};
   </span>,
 
   <span className="string">
-    color: var(--code-string-color);
+    color: #48D1A0;
   </span>,
 
   <span className="jsx-variable">
-    color: var(--code-jsx-variable-color);
+    font-weight: bold;
   </span>,
 
+  // TODO: is this needed?
   <span className="property-name">
     color: var(--code-property-name-color);
   </span>
