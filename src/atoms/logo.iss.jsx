@@ -23,5 +23,9 @@ export default (
       text-indent: 1ch;
       color: {palette.mediumContrast};
     </p>
+
+    <p {...to_s} className="logo-text">
+      display: none;
+    </p>
   </div>
 );

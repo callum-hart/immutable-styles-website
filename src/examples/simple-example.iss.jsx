@@ -1,5 +1,5 @@
 import { createStyle } from 'immutable-styles';
-import { fontSans_s } from '../constants/typography';
+import { fontSans } from '../constants/typography';
 import { palette } from '../constants/palette';
 
 export default (
@@ -8,7 +8,7 @@ export default (
     border: 2px solid {palette.mediumContrast};
 
     <legend>
-      { fontSans_s }
+      { fontSans }
       color: {palette.highContrast};
     </legend>
   </fieldset>
