@@ -6,6 +6,7 @@ import './atoms/button.iss';
 import './atoms/infographic.iss';
 import './atoms/link.iss';
 import './atoms/logo.iss';
+import './atoms/skip-to-content.iss';
 import './atoms/text.iss';
 
 import './molecules/button-group.iss';

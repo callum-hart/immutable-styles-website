@@ -25,10 +25,12 @@ export default [
 
     <button pseudo=":focus" className="tab-button">
       { focusShadow }
+      position: relative;
     </button>
 
     <button pseudo=":focus" className="tab-button active">
       { focusShadow }
+      position: relative;
     </button>
   </div>,
 
@@ -39,6 +41,7 @@ export default [
 
   <div pseudo=":focus" className="tabpanel">
     { composedFocusShadow(`var(--size-xs) var(--size-xs) ${palette.mediumContrast}`) };
+    position: relative;
   </div>,
 
   <div className="tabs-dark">
