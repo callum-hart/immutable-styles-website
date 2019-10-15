@@ -4,10 +4,12 @@ import { darken } from 'polished';
 import { palette } from '../constants/palette';
 import { fontSans } from '../constants/typography';
 import { focusShadow } from '../constants/accessibility';
+import { hoverTransition } from '../constants/transition';
 
 export default [
   <a className="link">
     { fontSans }
+    { hoverTransition }
     color: {palette.tertiaryCta};
     border-bottom: 1px solid {palette.tertiaryCta};
     text-decoration: none;

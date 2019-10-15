@@ -4,6 +4,7 @@ import { darken } from 'polished';
 import { palette } from '../constants/palette';
 import { fontSans } from '../constants/typography';
 import { focusShadow, composedFocusShadow } from '../constants/accessibility';
+import { hoverTransition } from '../constants/transition';
 
 const mixins = {
   button: createMixin(
@@ -22,6 +23,7 @@ export default [
     margin-right: var(--size-xs);
 
     <mixins.button className="tab-button">
+      { hoverTransition }
       background: {palette.mediumContrast};
     </mixins.button>
 

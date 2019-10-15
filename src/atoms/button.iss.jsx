@@ -4,11 +4,13 @@ import { darken } from 'polished';
 import { palette } from '../constants/palette';
 import { fontSans } from '../constants/typography';
 import { focusShadow } from '../constants/accessibility';
+import { hoverTransition } from '../constants/transition';
 
 const mixins = {
   button: createMixin(
     <a>
       { fontSans }
+      { hoverTransition }
       text-decoration: none;
       text-align: center;
       padding: var(--size-xs) var(--size-m);
