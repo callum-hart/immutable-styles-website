@@ -1,4 +1,6 @@
 import { createStyle, createMixin } from 'immutable-styles';
+import { darken } from 'polished';
+
 import { palette } from '../constants/palette';
 import { fontSans } from '../constants/typography';
 import { focusShadow, composedFocusShadow } from '../constants/accessibility';
@@ -21,6 +23,10 @@ export default [
 
     <mixins.button className="tab-button">
       background: {palette.mediumContrast};
+    </mixins.button>
+
+    <mixins.button pseudo=":hover" className="tab-button">
+      background: {darken(0.1, '#9E9E9D')};
     </mixins.button>
 
     <button pseudo=":focus" className="tab-button">

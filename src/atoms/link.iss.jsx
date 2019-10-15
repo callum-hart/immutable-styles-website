@@ -1,4 +1,5 @@
 import { createStyle } from 'immutable-styles';
+import { darken } from 'polished';
 
 import { palette } from '../constants/palette';
 import { fontSans } from '../constants/typography';
@@ -12,7 +13,11 @@ export default [
     text-decoration: none;
   </a>,
 
-  <a className="link" pseudo=":focus">
+  <a pseudo=":hover" className="link">
+    color: {darken(0.1, '#EB6A6C')};
+  </a>,
+
+  <a pseudo=":focus" className="link">
     { focusShadow }
   </a>
 ];

@@ -1,10 +1,12 @@
 import { createStyle, createMixin } from 'immutable-styles';
+import { darken } from 'polished';
+
 import { palette } from '../constants/palette';
 import { fontSans } from '../constants/typography';
 import { focusShadow } from '../constants/accessibility';
 
-const button = {
-  default: createMixin(
+const mixins = {
+  button: createMixin(
     <a>
       { fontSans }
       text-decoration: none;
@@ -12,29 +14,27 @@ const button = {
       padding: var(--size-xs) var(--size-m);
       color: {palette.lowContrast};
     </a>
-  ),
-  hover: createMixin(
-    <a pseudo=":hover">
-      text-decoration: underline;
-    </a>
-  ),
-  focus: createMixin(
-    <a pseudo=":focus">
-      { focusShadow }
-    </a>
   )
 };
 
 export default [
-  <button.default className="button-primary">
+  <mixins.button className="button-primary">
     background: {palette.primaryCta};
-  </button.default>,
-  <button.hover className="button-primary" />,
-  <button.focus className="button-primary" />,
+  </mixins.button>,
+  <mixins.button pseudo=":hover" className="button-primary">
+    background: {darken(0.1, '#ECED69')};
+  </mixins.button>,
+  <mixins.button pseudo=":focus" className="button-primary">
+    { focusShadow }
+  </mixins.button>,
 
-  <button.default className="button-secondary">
+  <mixins.button className="button-secondary">
     background: {palette.secondaryCta};
-  </button.default>,
-  <button.hover className="button-secondary" />,
-  <button.focus className="button-secondary" />
+  </mixins.button>,
+  <mixins.button pseudo=":hover" className="button-secondary">
+    background: {darken(0.1, '#F6F4F2')};
+  </mixins.button>,
+  <mixins.button pseudo=":focus" className="button-secondary">
+    { focusShadow }
+  </mixins.button>
 ];
