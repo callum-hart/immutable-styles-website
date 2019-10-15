@@ -10,7 +10,7 @@ export default (
     align-items: center;
 
     <svg {...to_s}>
-      width: 75px;
+      width: 80px;
     </svg>
 
     <svg {...from_s}>

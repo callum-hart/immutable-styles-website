@@ -1,6 +1,6 @@
 const fontSans = `
   font-family: 'Muli', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: var(--size-scale);
 `;
 

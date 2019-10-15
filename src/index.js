@@ -3,6 +3,7 @@ import './layout.iss';
 
 import './atoms/band.iss';
 import './atoms/button.iss';
+import './atoms/code-highlight.iss';
 import './atoms/infographic.iss';
 import './atoms/link.iss';
 import './atoms/logo.iss';
