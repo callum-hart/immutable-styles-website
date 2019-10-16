@@ -1,13 +1,13 @@
 import { createStyle } from 'immutable-styles';
 
-import { fontMono } from '../constants/typography';
-import { palette} from '../constants/palette';
 import { to_s, from_s_to_m } from '../constants/breakpoint';
+import { contrast_m} from '../constants/palette';
+import { fontMono } from '../constants/typography';
 
 export default [
   <svg className="infographic">
+    box-shadow: var(--size-xs) var(--size-xs) { contrast_m };
     width: auto;
-    box-shadow: var(--size-xs) var(--size-xs) {palette.mediumContrast};
   </svg>,
 
   <svg {...to_s} className="infographic">

@@ -1,3 +1,5 @@
+// TODO: use snake_case
+
 const fontSans = `
   font-family: 'Muli', sans-serif;
   font-weight: 700;

@@ -1,13 +1,13 @@
 import { createStyle } from 'immutable-styles';
 
-import { fontMono } from '../constants/typography';
-import { palette } from '../constants/palette';
 import { to_s, from_s } from '../constants/breakpoint';
+import { contrast_m } from '../constants/palette';
+import { fontMono } from '../constants/typography';
 
 export default (
   <div className="logo">
-    display: flex;
     align-items: center;
+    display: flex;
 
     <svg {...to_s}>
       width: 80px;
@@ -19,9 +19,9 @@ export default (
 
     <p className="logo-text">
       { fontMono }
+      color: { contrast_m };
       max-width: 16ch;
       text-indent: 1ch;
-      color: {palette.mediumContrast};
     </p>
 
     <p {...to_s} className="logo-text">

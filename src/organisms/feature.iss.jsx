@@ -1,5 +1,5 @@
 import { createStyle } from 'immutable-styles';
-import { palette } from '../constants/palette';
+
 import { to_s, from_s } from '../constants/breakpoint';
 
 export default [
@@ -13,8 +13,8 @@ export default [
 
   <div {...from_s} className="feature">
     <section className="container">
-      display: flex;
       align-items: center;
+      display: flex;
 
       <div pseudo=":last-of-type">
         padding-left: var(--size-xl);

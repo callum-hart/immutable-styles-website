@@ -1,3 +1,4 @@
+// TODO: change to focus_shadow
 const focusShadow = `
   outline: none;
   border-radius: 2px;

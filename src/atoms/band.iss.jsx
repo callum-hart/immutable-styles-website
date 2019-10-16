@@ -1,12 +1,13 @@
 import { createStyle } from 'immutable-styles';
-import { palette } from '../constants/palette';
+
+import { contrast_l, contrast_s } from '../constants/palette';
 
 export default [
   <section className="band-light">
-    background: {palette.highContrast};
+    background: { contrast_l };
   </section>,
 
   <section className="band-dark">
-    background: {palette.lowContrast};
+    background: { contrast_s };
   </section>
 ];

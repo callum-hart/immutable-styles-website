@@ -1,15 +1,16 @@
 import { createStyle } from 'immutable-styles';
-import { palette } from '../constants/palette';
+
+import { contrast_s } from '../constants/palette';
 
 export default (
   <footer>
+    background: { contrast_s };
     padding: var(--size-l) 0;
-    background: {palette.lowContrast};
 
     <section className="container">
+      align-items: center;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     </section>
   </footer>
 );

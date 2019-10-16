@@ -1,6 +1,7 @@
 import { createStyle } from 'immutable-styles';
-import { palette } from '../constants/palette';
+
 import { to_m, from_m } from '../constants/breakpoint';
+import { contrast_s } from '../constants/palette';
 
 export default [
   <body>
@@ -8,12 +9,12 @@ export default [
   </body>,
 
   <header>
-    background: {palette.lowContrast};
+    background: { contrast_s };
 
     <section className="container">
+      align-items: center;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     </section>
   </header>,
 

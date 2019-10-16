@@ -1,22 +1,23 @@
 import { createStyle } from 'immutable-styles';
-import { palette } from '../constants/palette';
-import { fontSans } from '../constants/typography';
+
 import { focusShadow } from '../constants/accessibility';
+import { contrast_l, contrast_s } from '../constants/palette';
+import { fontSans } from '../constants/typography';
 
 export default [
   <a className="skip-to-content">
     { fontSans }
-    text-decoration: none;
-    position: absolute;
-    top: -100px;
+    background: { contrast_l };
+    color: { contrast_s };
     padding: var(--size-xs) var(--size-m);
-    background: {palette.highContrast};
-    color: {palette.lowContrast};
+    position: absolute;
+    text-decoration: none;
+    top: -100px;
   </a>,
 
   <a className="skip-to-content" pseudo=":focus">
     { focusShadow }
-    top: var(--size-m);
     left: var(--size-m);
+    top: var(--size-m);
   </a>
 ];

@@ -1,8 +1,9 @@
 import { createStyle } from 'immutable-styles';
-import { palette } from '../constants/palette';
+
+import { contrast_l } from '../constants/palette';
 
 export default (
   <main>
-    background: {palette.highContrast};
+    background: { contrast_l };
   </main>
 );

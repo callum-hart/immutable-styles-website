@@ -1,15 +1,16 @@
 import { createStyle } from 'immutable-styles';
+
+import { contrast_l, contrast_m } from '../constants/palette';
 import { fontSans } from '../constants/typography';
-import { palette } from '../constants/palette';
 
 export default (
   <fieldset>
+    border: 2px solid { contrast_m };
     padding: var(--size-m);
-    border: 2px solid {palette.mediumContrast};
 
     <legend>
       { fontSans }
-      color: {palette.highContrast};
+      color: { contrast_l };
     </legend>
   </fieldset>
 );
