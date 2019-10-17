@@ -39,11 +39,11 @@ background: rgba(236,237,105,0.2); border-bottom: 1px solid #ECED69;}svg[class="
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   font-size: var(--size-scale);
-fill: #48D1A0;}text[class="svg-text hide-to-s"]{
+fill: #9E9E9D;}text[class="svg-text hide-to-s"]{
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   font-size: var(--size-scale);
-fill: #48D1A0;}@media(max-width:799px){text[class="svg-text hide-to-s"]{display: none;}}rect[class="fill-contrast-l"]{fill: #F7F4F2;}path[class="fill-contrast-xl"]{fill: #0A0A09;}path[class="fill-contrast-l"]{fill: #F7F4F2;}path[class="fill-contrast-m"]{fill: #9E9E9D;}path[class="fill-accent-2"]{fill: #EB6A6C;}path[class="fill-accent-3"]{fill: #40B4D2;}path[class="fill-accent-4"]{fill: #48D1A0;}path[class="fill-accent-2-opaque"]{fill: rgba(235,106,108,0.2);}a[class="link"]{
+fill: #9E9E9D;}@media(max-width:799px){text[class="svg-text hide-to-s"]{display: none;}}rect[class="fill-contrast-l"]{fill: #F7F4F2;}path[class="fill-contrast-xl"]{fill: #0A0A09;}path[class="fill-contrast-l"]{fill: #F7F4F2;}path[class="fill-contrast-m"]{fill: #9E9E9D;}path[class="fill-accent-2"]{fill: #EB6A6C;}path[class="fill-accent-3"]{fill: #40B4D2;}path[class="fill-accent-4"]{fill: #48D1A0;}path[class="fill-accent-2-opaque"]{fill: rgba(235,106,108,0.2);}a[class="link"]{
   font-family: 'Muli', sans-serif;
   font-weight: 700;
   font-size: var(--size-scale);

@@ -20,12 +20,12 @@ export default [
 
   <text className="svg-text">
     { fontMono }
-    fill: { accent_4 };
+    fill: { contrast_m };
   </text>,
 
   <text className="svg-text hide-to-s">
     { fontMono }
-    fill: { accent_4 };
+    fill: { contrast_m };
   </text>,
 
   <text {...to_s} className="svg-text hide-to-s">
