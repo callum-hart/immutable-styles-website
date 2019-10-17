@@ -1,13 +1,14 @@
 import { createStyle, createMixin } from 'immutable-styles';
+
+import { contrast_l, contrast_m, contrast_s, accent_1, accent_2, accent_3, accent_4 } from '../constants/palette';
 import { fontMono } from '../constants/typography';
-import { palette } from '../constants/palette';
 
 const mixins = {
   loc: createMixin(
     <li>
       { fontMono }
+      color: { contrast_m };
       list-style: none;
-      color: {palette.mediumContrast};
     </li>
   )
 };
@@ -37,54 +38,49 @@ export default [
   </mixins.loc>,
 
   <mixins.loc className="loc tab-1 stack-up">
-    text-indent: 2ch;
     margin-top: var(--size-s);
+    text-indent: 2ch;
   </mixins.loc>,
 
   <mixins.loc className="loc tab-2 stack-up">
-    text-indent: 4ch;
     margin-top: var(--size-s);
+    text-indent: 4ch;
   </mixins.loc>,
 
   <mixins.loc className="loc tab-3 stack-up">
-    text-indent: 6ch;
     margin-top: var(--size-s);
+    text-indent: 6ch;
   </mixins.loc>,
 
   <span className="keyword">
-    color: {palette.tertiaryCta};
+    color: { accent_2 };
   </span>,
 
   <span className="tag">
-    color: #38B4D4;
+    color: { accent_3 };
   </span>,
 
   <span className="attribute-light">
-    color: {palette.highContrast};
+    color: { contrast_l };
   </span>,
 
   <span className="attribute-dark">
-    color: {palette.lowContrast};
+    color: { contrast_s };
   </span>,
 
   <span className="function-light">
-    color: {palette.highContrast};
+    color: { contrast_l };
   </span>,
 
   <span className="function-dark">
-    color: {palette.lowContrast};
+    color: { contrast_s };
   </span>,
 
   <span className="string">
-    color: #48D1A0;
+    color: { accent_4 };
   </span>,
 
   <span className="jsx-variable">
     font-weight: bold;
-  </span>,
-
-  // TODO: is this needed?
-  <span className="property-name">
-    color: var(--code-property-name-color);
   </span>
 ];
