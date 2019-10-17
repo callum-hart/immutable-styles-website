@@ -5,6 +5,8 @@ const _red = '#EB6A6C';
 const _blue = '#40B4D2';
 const _green = '#48D1A0';
 
+// TODO: change from letters (s-xl) to numbers (1-4)
+const contrast_xl = '#0A0A09';
 const contrast_l = '#F7F4F2';
 const contrast_m = '#9E9E9D';
 const contrast_s = '#242322';
@@ -19,6 +21,7 @@ const accent_2__opaque = transparentize(0.8, '#EB6A6C');
 const accent_3__opaque = transparentize(0.8, '#40B4D2');
 const accent_4__opaque = transparentize(0.8, '#48D1A0');
 
+const contrast_xl__hover = darken(0.1, '#0A0A09');
 const contrast_l__hover = darken(0.1, '#F7F4F2');
 const contrast_m__hover = darken(0.1, '#9E9E9D');
 const contrast_s__hover = darken(0.1, '#242322');
@@ -29,6 +32,7 @@ const accent_3__hover = darken(0.1, '#40B4D2');
 const accent_4__hover = darken(0.1, '#48D1A0');
 
 module.exports = {
+  contrast_xl,
   contrast_l,
   contrast_m,
   contrast_s,
@@ -40,6 +44,7 @@ module.exports = {
   accent_2__opaque,
   accent_3__opaque,
   accent_4__opaque,
+  contrast_xl__hover,
   contrast_l__hover,
   contrast_m__hover,
   contrast_s__hover,

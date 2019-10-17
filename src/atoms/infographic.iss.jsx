@@ -1,7 +1,7 @@
 import { createStyle } from 'immutable-styles';
 
 import { to_s, from_s_to_m } from '../constants/breakpoint';
-import { contrast_l, contrast_m, contrast_s, accent_1, accent_2, accent_3, accent_4, accent_2__opaque } from '../constants/palette';
+import { contrast_xl, contrast_l, contrast_m, accent_2, accent_3, accent_4, accent_2__opaque } from '../constants/palette';
 import { fontMono } from '../constants/typography';
 
 export default [
@@ -18,13 +18,14 @@ export default [
     height: 125px;
   </svg>,
 
-  // TODO: handle text colors
   <text className="svg-text">
     { fontMono }
+    fill: { accent_4 };
   </text>,
 
   <text className="svg-text hide-to-s">
     { fontMono }
+    fill: { accent_4 };
   </text>,
 
   <text {...to_s} className="svg-text hide-to-s">
@@ -35,9 +36,8 @@ export default [
     fill: { contrast_l };
   </rect>,
 
-  // TODO: add color to palette
-  <path className="fill-contrast-dark">
-    fill: #0B0B0B;
+  <path className="fill-contrast-xl">
+    fill: { contrast_xl };
   </path>,
 
   <path className="fill-contrast-l">
@@ -50,6 +50,14 @@ export default [
 
   <path className="fill-accent-2">
     fill: { accent_2 };
+  </path>,
+
+  <path className="fill-accent-3">
+    fill: { accent_3 };
+  </path>,
+
+  <path className="fill-accent-4">
+    fill: { accent_4 };
   </path>,
 
   <path className="fill-accent-2-opaque">
