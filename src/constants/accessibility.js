@@ -1,5 +1,4 @@
-// TODO: change to focus_shadow
-const focusShadow = `
+const focus_shadow = `
   outline: none;
   border-radius: 2px;
   box-shadow: 0 0 0 4px #A8CBF5;
@@ -12,6 +11,6 @@ const composedFocusShadow = baseShadow => `
 `;
 
 module.exports = {
-  focusShadow,
+  focus_shadow,
   composedFocusShadow
 };

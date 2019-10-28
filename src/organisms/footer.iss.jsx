@@ -1,10 +1,10 @@
 import { createStyle } from 'immutable-styles';
 
-import { contrast_s } from '../constants/palette';
+import { contrast_4 } from '../constants/palette';
 
 export default (
   <footer>
-    background: { contrast_s };
+    background: { contrast_4 };
     padding: var(--size-l) 0;
 
     <section className="container">

@@ -1,13 +1,13 @@
 import { createStyle, createMixin } from 'immutable-styles';
 
 import { to_xs, from_xs_to_s, from_s_to_m, from_m_to_l, from_l } from '../constants/breakpoint';
-import { contrast_l, contrast_m, contrast_s } from '../constants/palette';
-import { fontSans, fontSans_xl, fontSans_m } from '../constants/typography';
+import { contrast_2, contrast_3, contrast_4 } from '../constants/palette';
+import { font_sans, font_sans_xl, font_sans_m } from '../constants/typography';
 
 const mixins = {
   h3: createMixin(
     <h3>
-      { fontSans_m }
+      { font_sans_m }
       line-height: var(--size-ratio);
       margin-bottom: 0;
       margin-top: var(--size-l);
@@ -47,24 +47,24 @@ export default [
   </body>,
 
   <h1>
-    { fontSans_xl }
+    { font_sans_xl }
   </h1>,
 
   <h2>
-    { fontSans_m }
+    { font_sans_m }
   </h2>,
 
   <mixins.h3 className="heading-light">
-    color: { contrast_l };
+    color: { contrast_2 };
   </mixins.h3>,
 
   <mixins.h3 className="heading-dark">
-    color: { contrast_s };
+    color: { contrast_4 };
   </mixins.h3>,
 
   <p>
-    { fontSans }
-    color: { contrast_m };
+    { font_sans }
+    color: { contrast_3 };
     line-height: var(--size-ratio);
     margin-bottom: 0;
     margin-top: var(--size-m);

@@ -1,12 +1,12 @@
 import { createStyle } from 'immutable-styles';
 
 import { to_m, from_m } from '../constants/breakpoint';
-import { contrast_l, contrast_m, contrast_s } from '../constants/palette';
+import { contrast_2, contrast_3, contrast_4 } from '../constants/palette';
 
 export default [
   <div className="hero">
     align-items: center;
-    background-color: { contrast_s };
+    background-color: { contrast_4 };
     background-image: url(./images/polygon.svg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -15,14 +15,14 @@ export default [
 
     <section className="container">
       <h1>
-        color: { contrast_l };
+        color: { contrast_2 };
         margin: 0;
         max-width: 25ch;
       </h1>
 
       <h2>
         max-width: 50ch;
-        color: { contrast_m };
+        color: { contrast_3 };
       </h2>
     </section>
   </div>,

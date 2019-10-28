@@ -1,9 +1,9 @@
 import { createStyle } from 'immutable-styles';
 
-import { contrast_l } from '../constants/palette';
+import { contrast_2 } from '../constants/palette';
 
 export default (
   <main>
-    background: { contrast_l };
+    background: { contrast_2 };
   </main>
 );

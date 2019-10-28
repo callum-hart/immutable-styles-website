@@ -1,13 +1,13 @@
 import { createStyle, createMixin } from 'immutable-styles';
 
-import { focusShadow } from '../constants/accessibility';
-import { contrast_l, contrast_m, contrast_s } from '../constants/palette';
-import { fontSans } from '../constants/typography';
+import { focus_shadow } from '../constants/accessibility';
+import { contrast_2, contrast_3, contrast_4 } from '../constants/palette';
+import { font_sans } from '../constants/typography';
 
 const mixins = {
   button: createMixin(
     <button>
-      { fontSans }
+      { font_sans }
       border-style: solid;
       border-width: 3px;
       padding: var(--size-xs) var(--size-m);
@@ -18,30 +18,30 @@ const mixins = {
 
 export default [
   <mixins.button className="primary-button">
-    color: { contrast_s };
-    background: { contrast_l };
-    border-color: { contrast_l };
+    color: { contrast_4 };
+    background: { contrast_2 };
+    border-color: { contrast_2 };
   </mixins.button>,
   <mixins.button className="primary-button" pseudo=":focus">
-    { focusShadow }
+    { focus_shadow }
   </mixins.button>,
 
   <mixins.button className="secondary-button">
-    color: { contrast_l };
-    background: { contrast_s };
-    border-color: { contrast_l };
+    color: { contrast_2 };
+    background: { contrast_4 };
+    border-color: { contrast_2 };
   </mixins.button>,
   <mixins.button className="secondary-button" pseudo=":focus">
-    { focusShadow }
+    { focus_shadow }
   </mixins.button>,
 
   <mixins.button className="tertery-button">
-    color: { contrast_s };
-    background: { contrast_m };
-    border-color: { contrast_m };
+    color: { contrast_4 };
+    background: { contrast_3 };
+    border-color: { contrast_3 };
   </mixins.button>,
   <mixins.button className="tertery-button" pseudo=":focus">
-    { focusShadow }
+    { focus_shadow }
   </mixins.button>,
 
   <div className="example-composition-result">

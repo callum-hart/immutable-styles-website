@@ -1,13 +1,13 @@
 import { createStyle, createMixin } from 'immutable-styles';
 
-import { contrast_l, contrast_m, contrast_s, accent_1, accent_2, accent_3, accent_4 } from '../constants/palette';
-import { fontMono } from '../constants/typography';
+import { contrast_2, contrast_3, contrast_4, accent_1, accent_2, accent_3, accent_4 } from '../constants/palette';
+import { font_mono } from '../constants/typography';
 
 const mixins = {
   loc: createMixin(
     <li>
-      { fontMono }
-      color: { contrast_m };
+      { font_mono }
+      color: { contrast_3 };
       list-style: none;
     </li>
   )
@@ -61,19 +61,19 @@ export default [
   </span>,
 
   <span className="attribute-light">
-    color: { contrast_l };
+    color: { contrast_2 };
   </span>,
 
   <span className="attribute-dark">
-    color: { contrast_s };
+    color: { contrast_4 };
   </span>,
 
   <span className="function-light">
-    color: { contrast_l };
+    color: { contrast_2 };
   </span>,
 
   <span className="function-dark">
-    color: { contrast_s };
+    color: { contrast_4 };
   </span>,
 
   <span className="string">

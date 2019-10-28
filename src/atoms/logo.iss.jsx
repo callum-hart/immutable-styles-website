@@ -1,8 +1,8 @@
 import { createStyle } from 'immutable-styles';
 
 import { to_s, from_s } from '../constants/breakpoint';
-import { contrast_m } from '../constants/palette';
-import { fontMono } from '../constants/typography';
+import { contrast_3 } from '../constants/palette';
+import { font_mono } from '../constants/typography';
 
 export default (
   <div className="logo">
@@ -18,8 +18,8 @@ export default (
     </svg>
 
     <p className="logo-text">
-      { fontMono }
-      color: { contrast_m };
+      { font_mono }
+      color: { contrast_3 };
       max-width: 16ch;
       text-indent: 1ch;
     </p>

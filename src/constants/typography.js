@@ -1,32 +1,30 @@
-// TODO: use snake_case
-
-const fontSans = `
+const font_sans = `
   font-family: 'Muli', sans-serif;
   font-weight: 700;
   font-size: var(--size-scale);
 `;
 
-const fontSans_xl = `
+const font_sans_xl = `
   font-family: 'Muli', sans-serif;
   font-weight: 800;
   font-size: var(--size-xl);
 `;
 
-const fontSans_m = `
+const font_sans_m = `
   font-family: 'Muli', sans-serif;
   font-weight: 800;
   font-size: var(--size-m);
 `;
 
-const fontMono = `
+const font_mono = `
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   font-size: var(--size-scale);
 `;
 
 module.exports = {
-  fontSans,
-  fontSans_xl,
-  fontSans_m,
-  fontMono
+  font_sans,
+  font_sans_xl,
+  font_sans_m,
+  font_mono
 };

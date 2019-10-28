@@ -1,7 +1,7 @@
 import { createStyle } from 'immutable-styles';
 
 import { to_m, from_m } from '../constants/breakpoint';
-import { contrast_s } from '../constants/palette';
+import { contrast_4 } from '../constants/palette';
 
 export default [
   <body>
@@ -9,7 +9,7 @@ export default [
   </body>,
 
   <header>
-    background: { contrast_s };
+    background: { contrast_4 };
 
     <section className="container">
       align-items: center;

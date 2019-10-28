@@ -1,8 +1,8 @@
 import { createStyle } from 'immutable-styles';
 
-import { focusShadow } from '../constants/accessibility';
-import { contrast_l, contrast_m, contrast_s } from '../constants/palette';
-import { fontSans } from '../constants/typography';
+import { focus_shadow } from '../constants/accessibility';
+import { contrast_2, contrast_3, contrast_4 } from '../constants/palette';
+import { font_sans } from '../constants/typography';
 
 export default [
   <div className="form-field">
@@ -15,28 +15,28 @@ export default [
       padding: var(--size-xs);
 
       <label>
-        { fontSans }
-        color: { contrast_m };
+        { font_sans }
+        color: { contrast_3 };
       </label>
     </div>
 
     <input className="text-input">
-      { fontSans }
+      { font_sans }
       background: #D6D5D4;
-      border-bottom: 3px solid { contrast_m };
+      border-bottom: 3px solid { contrast_3 };
       border-left: none;
       border-right: none;
       border-top: none;
       box-sizing: border-box;
-      color: { contrast_s };
+      color: { contrast_4 };
       padding: var(--size-xs);
       width: 100%;
     </input>
 
     <input className="text-input" pseudo=":focus">
-      { focusShadow }
-      background: { contrast_l };
-      border-bottom-color: { contrast_l };
+      { focus_shadow }
+      background: { contrast_2 };
+      border-bottom-color: { contrast_2 };
     </input>
   </div>,
 
@@ -46,13 +46,13 @@ export default [
     position: relative;
 
     <svg>
-      color: { contrast_m };
+      color: { contrast_3 };
     </svg>
 
     <p className="tooltip-content">
-      { fontSans }
-      background: { contrast_m };
-      color: { contrast_s };
+      { font_sans }
+      background: { contrast_3 };
+      color: { contrast_4 };
       display: none;
       line-height: var(--size-m);
       margin: 0;
