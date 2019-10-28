@@ -76,6 +76,14 @@ export default [
     color: { contrast_4 };
   </span>,
 
+  <span className="number-light">
+    color: { contrast_2 };
+  </span>,
+
+  <span className="number-dark">
+    color: { contrast_4 };
+  </span>,
+
   <span className="string">
     color: { accent_4 };
   </span>,

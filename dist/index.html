@@ -454,28 +454,34 @@
                         <span class="keyword">export default</span> (
                       </li>
                       <li class="loc tab-1">
-                        <span class="tag">&lt;p</span>
-                        <span class="attribute-light">className</span>=<span
-                          class="string"
-                          >"greeting"</span
-                        ><span class="tag">&gt;</span>
+                        <span class="tag">&lt;fieldset&gt;</span>
                       </li>
                       <li class="loc tab-2">
-                        <!-- TODO: no need for "property-name" class -->
-                        <span class="property-name">font-family</span>: 'Muli',
-                        sans-serif;
+                        border: 2px solid #9E9E9D;
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">font-size</span>: 2rem;
+                        padding: var(--size-m);
+                      </li>
+                      <li class="loc tab-2 stack-up">
+                        <span class="tag">&lt;legend&gt;</span>
+                      </li>
+                      <li class="loc tab-3">
+                        font-family: 'Muli', sans-serif;
+                      </li>
+                      <li class="loc tab-3">
+                        font-weight: 700;
+                      </li>
+                      <li class="loc tab-3">
+                        font-size: var(--size-scale);
+                      </li>
+                      <li class="loc tab-3">
+                        color: #F7F4F2;
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">line-height</span>: 4rem;
-                      </li>
-                      <li class="loc tab-2">
-                        <span class="property-name">color</span>: hotpink;
+                        <span class="tag">&lt;/legend&gt;</span>
                       </li>
                       <li class="loc tab-1">
-                        <span class="tag">&lt;/p&gt;</span>
+                        <span class="tag">&lt;/fieldset&gt;</span>
                       </li>
                       <li class="loc">);</li>
                     </ul>
@@ -518,8 +524,8 @@
               <p>
                 Since immutable styles is just JavaScript we can share common
                 values using variables such as the
-                <code class="code-highlight">tablet</code> and
-                <code class="code-highlight">desktop</code> breakpoints.
+                <code class="code-highlight">to_m</code> and
+                <code class="code-highlight">from_m</code> breakpoints.
               </p>
             </div>
 
@@ -566,55 +572,106 @@
                         <span class="string">'immutable-styles'</span>;
                       </li>
                       <li class="loc stack-up">
-                        <span class="keyword">const</span> tablet =
-                        <span class="string">'768'</span>;
+                        <span class="keyword">const</span> to_m =
+                        <span class="number-dark">999</span>;
                       </li>
                       <li class="loc">
-                        <span class="keyword">const</span> desktop =
-                        <span class="string">'769'</span>;
+                        <span class="keyword">const</span> from_m =
+                        <span class="number-dark">1000</span>;
                       </li>
                       <li class="loc stack-up">
                         <span class="keyword">export default</span> [
                       </li>
                       <li class="loc tab-1">
-                        <span class="tag">&lt;a</span>
+                        <span class="tag">&lt;section</span>
                         <span class="attribute-dark">className</span>=<span
                           class="string"
-                          >"nav-link"</span
+                          >"row"</span
+                        ><span class="tag">&gt;</span>
+                      </li>
+                      <li class="loc tab-2">
+                        display: flex;
+                      </li>
+                      <li class="loc tab-2 stack-up">
+                        <span class="tag">&lt;div</span>
+                        <span class="attribute-dark">className</span>=<span
+                          class="string"
+                          >"col"</span
+                        ><span class="tag">&gt;</span>
+                      </li>
+                      <li class="loc tab-3">
+                        flex: 1;
+                      </li>
+                      <li class="loc tab-2">
+                        <span class="tag">&lt;/div&gt;</span>
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;/section&gt;</span>,
+                      </li>
+                      <li class="loc tab-1 stack-up">
+                        <span class="tag">&lt;section</span>
+                        <span class="attribute-dark">className</span>=<span
+                          class="string"
+                          >"row"</span
                         >
                         <span class="attribute-dark">maxWidth</span>=<span
                           class="jsx-variable"
-                          >{<code class="code-highlight">tablet</code>}</span
+                          >{<code class="code-highlight">to_m</code>}</span
                         ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">font-size</span>: 1.2rem;
+                        flex-direction: column;
                       </li>
-                      <li class="loc tab-2">
-                        <span class="property-name">padding</span>: 16px;
-                      </li>
-                      <li class="loc tab-1">
-                        <span class="tag">&lt;/a&gt;</span>,
-                      </li>
-                      <li class="loc tab-1 stack-up">
-                        <span class="tag">&lt;a</span>
+                      <li class="loc tab-2 stack-up">
+                        <span class="tag">&lt;div</span>
                         <span class="attribute-dark">className</span>=<span
                           class="string"
-                          >"nav-link"</span
+                          >"col"</span
                         >
-                        <span class="attribute-dark">minWidth</span>=<span
+                        <span class="attribute-dark">pseudo</span>=<span
+                          class="string"
+                          >":first-of-type"</span
+                        ><span class="tag">&gt;</span>
+                      </li>
+                      <li class="loc tab-3">
+                        margin-bottom: var(--size-l);
+                      </li>
+                      <li class="loc tab-2">
+                        <span class="tag">&lt;/div&gt;</span>
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;/section&gt;</span>,
+                      </li>
+                      <li class="loc tab-1 stack-up">
+                        <span class="tag">&lt;section</span>
+                        <span class="attribute-dark">className</span>=<span
+                          class="string"
+                          >"row"</span
+                        >
+                        <span class="attribute-dark">maxWidth</span>=<span
                           class="jsx-variable"
-                          >{<code class="code-highlight">desktop</code>}</span
+                          >{<code class="code-highlight">from_m</code>}</span
                         ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">font-size</span>: 1rem;
+                        <span class="tag">&lt;div</span>
+                        <span class="attribute-dark">className</span>=<span
+                          class="string"
+                          >"col"</span
+                        >
+                        <span class="attribute-dark">pseudo</span>=<span
+                          class="string"
+                          >":first-of-type"</span
+                        ><span class="tag">&gt;</span>
+                      </li>
+                      <li class="loc tab-3">
+                        margin-right: var(--size-l);
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">padding</span>: 12px;
+                        <span class="tag">&lt;/div&gt;</span>
                       </li>
                       <li class="loc tab-1">
-                        <span class="tag">&lt;/a&gt;</span>
+                        <span class="tag">&lt;/section&gt;</span>
                       </li>
                       <li class="loc">];</li>
                     </ul>
@@ -720,19 +777,25 @@
                         <span class="tag">&lt;button&gt;</span>
                       </li>
                       <li class="loc tab-3">
-                        <span class="property-name">padding</span>: 10px 20px;
+                        font-family: 'Muli', sans-serif;
                       </li>
                       <li class="loc tab-3">
-                        <span class="property-name">border</span>: none;
+                        font-weight: 700;
                       </li>
                       <li class="loc tab-3">
-                        <span class="property-name">font-size</span>: 1rem;
+                        font-size: var(--size-scale);
                       </li>
                       <li class="loc tab-3">
-                        <span class="property-name">border-radius</span>: 3px;
+                        border-style: solid;
                       </li>
                       <li class="loc tab-3">
-                        <span class="property-name">cursor</span>: pointer;
+                        border-width: 3px;
+                      </li>
+                      <li class="loc tab-3">
+                        padding: var(--size-xs) var(--size-m);
+                      </li>
+                      <li class="loc tab-3">
+                        width: 100%;
                       </li>
                       <li class="loc tab-2">
                         <span class="tag">&lt;/button&gt;</span>
@@ -746,14 +809,35 @@
                         <span class="tag">&lt;mixins.button</span>
                         <span class="attribute-light">className</span>=<span
                           class="string"
-                          >"btn-primary"</span
+                          >"primary-btn"</span
                         ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">background</span>: hotpink;
+                        color: #242322;
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">color</span>: ivory;
+                        background: #F7F4F2;
+                      </li>
+                      <li class="loc tab-2">
+                        border-color: #F7F4F2;
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;/mixins.button</span
+                        ><span class="tag">&gt;</span>,
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;mixins.button</span>
+                        <span class="attribute-light">className</span>=<span
+                          class="string"
+                          >"primary-btn"</span
+                        >
+                        <span class="attribute-light">pseudo</span>=<span
+                          class="string"
+                          >":focus"</span
+                        ><span class="tag">&gt;</span>
+                      </li>
+                      <li class="loc tab-2">
+                        box-shadow: 0 0 0 4px #A8CBF5
                       </li>
                       <li class="loc tab-1">
                         <span class="tag">&lt;/mixins.button</span
@@ -763,14 +847,73 @@
                         <span class="tag">&lt;mixins.button</span>
                         <span class="attribute-light">className</span>=<span
                           class="string"
-                          >"btn-secondary"</span
+                          >"secondary-btn"</span
                         ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">background</span>: ivory;
+                        color: #F7F4F2;
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">color</span>: hotpink;
+                        background: #242322;
+                      </li>
+                      <li class="loc tab-2">
+                        border-color: #F7F4F2;
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;/mixins.button</span
+                        ><span class="tag">&gt;</span>,
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;mixins.button</span>
+                        <span class="attribute-light">className</span>=<span
+                          class="string"
+                          >"secondary-btn"</span
+                        >
+                        <span class="attribute-light">pseudo</span>=<span
+                          class="string"
+                          >":focus"</span
+                        ><span class="tag">&gt;</span>
+                      </li>
+                      <li class="loc tab-2">
+                        box-shadow: 0 0 0 4px #A8CBF5
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;/mixins.button</span
+                        ><span class="tag">&gt;</span>,
+                      </li>
+                      <li class="loc tab-1 stack-up">
+                        <span class="tag">&lt;mixins.button</span>
+                        <span class="attribute-light">className</span>=<span
+                          class="string"
+                          >"tertery-btn"</span
+                        ><span class="tag">&gt;</span>
+                      </li>
+                      <li class="loc tab-2">
+                        color: #242322;
+                      </li>
+                      <li class="loc tab-2">
+                        background: #9E9E9D;
+                      </li>
+                      <li class="loc tab-2">
+                        border-color: #9E9E9D;
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;/mixins.button</span
+                        ><span class="tag">&gt;</span>,
+                      </li>
+                      <li class="loc tab-1">
+                        <span class="tag">&lt;mixins.button</span>
+                        <span class="attribute-light">className</span>=<span
+                          class="string"
+                          >"tertery-btn"</span
+                        >
+                        <span class="attribute-light">pseudo</span>=<span
+                          class="string"
+                          >":focus"</span
+                        ><span class="tag">&gt;</span>
+                      </li>
+                      <li class="loc tab-2">
+                        box-shadow: 0 0 0 4px #A8CBF5
                       </li>
                       <li class="loc tab-1">
                         <span class="tag">&lt;/mixins.button</span
@@ -791,13 +934,13 @@
                   hidden
                 >
                   <div class="example-composition-result">
-                    <button class="primary-button" type="button">
+                    <button class="primary-btn" type="button">
                       Primary Button
                     </button>
-                    <button class="secondary-button" type="button">
+                    <button class="secondary-btn" type="button">
                       Secondary Button
                     </button>
-                    <button class="tertery-button" type="button">
+                    <button class="tertery-btn" type="button">
                       Tertery Button
                     </button>
                   </div>
@@ -1150,12 +1293,12 @@
                         </div>
                         <section class="row">
                           <div class="col">
-                            <button class="secondary-button" type="button">
+                            <button class="secondary-btn" type="button">
                               Back
                             </button>
                           </div>
                           <div class="col">
-                            <button class="primary-button" type="button">
+                            <button class="primary-btn" type="button">
                               Submit
                             </button>
                           </div>

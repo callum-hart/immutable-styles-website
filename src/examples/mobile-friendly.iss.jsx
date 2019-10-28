@@ -12,25 +12,17 @@ export default [
     </div>
   </section>,
 
-  <section maxWidth={to_m} className="row">
+  <section className="row" maxWidth={to_m}>
     flex-direction: column;
 
     <div className="col" pseudo=":first-of-type">
-      margin-bottom: var(--size-xs);
-    </div>
-
-    <div className="col" pseudo=":last-of-type">
-      margin-top: var(--size-xs);
+      margin-bottom: var(--size-l);
     </div>
   </section>,
 
-  <section minWidth={from_m} className="row">
+  <section className="row" minWidth={from_m}>
     <div className="col" pseudo=":first-of-type">
-      margin-right: var(--size-xs);
-    </div>
-
-    <div className="col" pseudo=":last-of-type">
-      margin-left: var(--size-xs);
+      margin-right: var(--size-l);
     </div>
   </section>,
 
@@ -42,11 +34,11 @@ export default [
         background: #BFD9B2;
       </div>
 
-      <div maxWidth={to_m} className="col">
+      <div className="col" maxWidth={to_m}>
         min-height: 100px;
       </div>
 
-      <div minWidth={from_m} className="col">
+      <div className="col" minWidth={from_m}>
         min-height: 200px;
       </div>
     </section>

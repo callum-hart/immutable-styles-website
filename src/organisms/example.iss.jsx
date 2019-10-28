@@ -11,7 +11,7 @@ export default (
       display: flex;
 
       <div pseudo=":first-of-type">
-        max-width: 440px;
+        max-width: 430px;
         padding-right: var(--size-xl);
       </div>
 

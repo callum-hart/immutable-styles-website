@@ -17,30 +17,30 @@ const mixins = {
 };
 
 export default [
-  <mixins.button className="primary-button">
+  <mixins.button className="primary-btn">
     color: { contrast_4 };
     background: { contrast_2 };
     border-color: { contrast_2 };
   </mixins.button>,
-  <mixins.button className="primary-button" pseudo=":focus">
+  <mixins.button className="primary-btn" pseudo=":focus">
     { focus_shadow }
   </mixins.button>,
 
-  <mixins.button className="secondary-button">
+  <mixins.button className="secondary-btn">
     color: { contrast_2 };
     background: { contrast_4 };
     border-color: { contrast_2 };
   </mixins.button>,
-  <mixins.button className="secondary-button" pseudo=":focus">
+  <mixins.button className="secondary-btn" pseudo=":focus">
     { focus_shadow }
   </mixins.button>,
 
-  <mixins.button className="tertery-button">
+  <mixins.button className="tertery-btn">
     color: { contrast_4 };
     background: { contrast_3 };
     border-color: { contrast_3 };
   </mixins.button>,
-  <mixins.button className="tertery-button" pseudo=":focus">
+  <mixins.button className="tertery-btn" pseudo=":focus">
     { focus_shadow }
   </mixins.button>,
 
