@@ -232,7 +232,7 @@
                 Code changes and large scale refactoring is a breeze since the
                 compiler catches any unexpected outcomes. Whether overrides
                 occur within the same or another file, among equal or nested
-                selectors, or even among different screen-sizes the compiler
+                selectors, or even among different screen-sizes – the compiler
                 catches them all before they reach a browser.
               </p>
             </div>
@@ -516,16 +516,15 @@
                 and intuitive API.
               </p>
               <p>
-                This example optimizes navigation links for different screen
-                sizes. On tablet-sized devices the text size is increased
-                (improving readbility) whilst the clickable target area is
-                enlarged (to be forgiving to thumbs).
+                This example implements a responsive grid. On small screens the
+                columns sit above one another whereas on large screens they sit
+                beside one another.
               </p>
               <p>
-                Since immutable styles is just JavaScript we can share common
-                values using variables such as the
+                Since immutable styles is just JavaScript common values can be
+                shared using variables such as the
                 <code class="code-highlight">to_m</code> and
-                <code class="code-highlight">from_m</code> breakpoints.
+                <code class="code-highlight">from_m</code> breakpoint constants.
               </p>
             </div>
 
@@ -711,12 +710,14 @@
               <p>
                 This example mixin holds commons styles shared among all
                 buttons. Each button variant can use the mixin like a template
-                and subsequently add its own unique styles such as background
-                and color.
+                and subsequently add its own styles such as
+                <code class="code-highlight">color</code>,
+                <code class="code-highlight">background</code>, and
+                <code class="code-highlight">border-color</code>.
               </p>
               <p>
                 Immutable mixins offer the same guarantee and protection against
-                side effects.
+                CSS side effects.
               </p>
             </div>
 
@@ -813,7 +814,7 @@
                         ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc tab-2">
-                        color: #242322;
+                        <code class="code-highlight">color</code>: #242322;
                       </li>
                       <li class="loc tab-2">
                         background: #F7F4F2;
@@ -836,7 +837,7 @@
                         color: #F7F4F2;
                       </li>
                       <li class="loc tab-2">
-                        background: #242322;
+                        <code class="code-highlight">background</code>: #242322;
                       </li>
                       <li class="loc tab-2">
                         border-color: #F7F4F2;
@@ -859,11 +860,12 @@
                         background: #9E9E9D;
                       </li>
                       <li class="loc tab-2">
-                        border-color: #9E9E9D;
+                        <code class="code-highlight">border-color</code>:
+                        #9E9E9D;
                       </li>
                       <li class="loc tab-1">
                         <span class="tag">&lt;/mixins.button</span
-                        ><span class="tag">&gt;</span>,
+                        ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc">
                         ];
@@ -908,7 +910,7 @@
               </p>
               <p>
                 The tooltip in this example reveals additional information to
-                the user when they hover over the icon and its prompt.
+                the user when they hover over the help icon.
               </p>
               <p>
                 All CSS pseudo classes such as
@@ -1085,15 +1087,14 @@
               </p>
               <p>
                 This example uses the
-                <code class="code-highlight">darken</code> utility function from
-                <a href="" class="link">polished</a> to change the form
-                background during its loading state. Since states are handled
-                explicitly it becomes easy to identify every state the form has
-                and how it looks in each state.
+                <code class="code-highlight">lighten</code> utility function
+                from <a href="" class="link">polished</a> and a
+                <a href="" class="link">BEM</a> modifier class during the forms
+                loading state.
               </p>
               <p>
-                This example uses the <a href="" class="link">BEM</a> naming
-                convension to make the forms CSS classname more meaningful.
+                Since states are handled explicitly it becomes easy to identify
+                every state the form has and how it looks in each state.
               </p>
             </div>
 
