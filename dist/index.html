@@ -4,20 +4,18 @@
     <title>Immutable Styles Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- TODO: audit and remove unused font-weights -->
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/example-ui-states.js"></script>
+
     <link
-      href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      href="https://fonts.googleapis.com/css?family=Muli:700,800"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600"
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500"
       rel="stylesheet"
     />
     <link href="./bundle.css" rel="stylesheet" />
-
-    <!-- TODO: move to bottom? -->
-    <script src="./scripts/tabs.js"></script>
-    <script src="./scripts/example-ui-states.js"></script>
   </head>
   <body>
     <a href="#content" class="skip-to-content">Skip to content</a>
@@ -59,8 +57,16 @@
 
         <nav>
           <div class="button-group">
-            <a href="#" class="button-primary">Get Started</a>
-            <a href="#" class="button-secondary">Documentation</a>
+            <a
+              href="https://callum-hart.gitbook.io/immutable-styles/beginnertutorial"
+              class="button-primary"
+              >Get Started</a
+            >
+            <a
+              href="https://callum-hart.gitbook.io/immutable-styles/"
+              class="button-secondary"
+              >Documentation</a
+            >
           </div>
         </nav>
       </section>
@@ -79,10 +85,18 @@
           </h2>
           <ul class="inline-list">
             <li>
-              <a href="#" class="link">v1.0.51</a>
+              <a
+                href="https://github.com/callum-hart/immutable-styles/releases"
+                class="link"
+                >v1.0.52</a
+              >
             </li>
             <li>
-              <a href="#" class="link">Star</a>
+              <a
+                href="https://github.com/callum-hart/immutable-styles/stargazers"
+                class="link"
+                >Star</a
+              >
             </li>
           </ul>
         </section>
@@ -224,9 +238,13 @@
               <h3 class="heading-light">Instant Feedback Loop</h3>
               <p>
                 A friendly compiler with
-                <a href="#" class="link">beatiful error messages</a> catches
-                conflicting styles, whilst enforcing design patterns aimed at
-                making CSS more resiliant.
+                <a
+                  href="https://callum-hart.gitbook.io/immutable-styles/compiletimeerrors"
+                  class="link"
+                  >beatiful error messages</a
+                >
+                catches conflicting styles, whilst enforcing design patterns
+                aimed at making CSS more resiliant.
               </p>
               <p>
                 Code changes and large scale refactoring is a breeze since the
@@ -521,7 +539,7 @@
                 beside one another.
               </p>
               <p>
-                Since immutable styles is just JavaScript common values can be
+                Since Immutable Styles is just JavaScript common values can be
                 shared using variables such as the
                 <code class="code-highlight">to_m</code> and
                 <code class="code-highlight">from_m</code> breakpoint constants.
@@ -916,7 +934,7 @@
                 All CSS pseudo classes such as
                 <code class="code-highlight">:hover</code> and pseudo elements
                 such as <code class="code-highlight">::before</code> are
-                supported in immutable styles.
+                supported in Immutable Styles.
               </p>
             </div>
 
@@ -1082,15 +1100,21 @@
             <div>
               <h3 class="heading-dark">UI States</h3>
               <p>
-                Immutable styles is symbiotic with other libraries and existing
+                Immutable Styles is symbiotic with other libraries and existing
                 best practices.
               </p>
               <p>
                 This example uses the
                 <code class="code-highlight">lighten</code> utility function
-                from <a href="" class="link">polished</a> and a
-                <a href="" class="link">BEM</a> modifier class during the forms
-                loading state.
+                from
+                <a
+                  href="https://github.com/styled-components/polished"
+                  class="link"
+                  >polished</a
+                >
+                and a
+                <a href="http://getbem.com/naming/" class="link">BEM</a>
+                modifier class during the forms loading state.
               </p>
               <p>
                 Since states are handled explicitly it becomes easy to identify
@@ -1278,22 +1302,41 @@
       <section class="container">
         <ul class="inline-list">
           <li>
-            <a href="#" class="link">v1.0.51</a>
+            <a
+              href="https://github.com/callum-hart/immutable-styles/releases"
+              class="link"
+              >v1.0.52</a
+            >
           </li>
           <li>
-            <a href="#" class="link">MIT License</a>
+            <a
+              href="https://github.com/callum-hart/immutable-styles/blob/master/LICENSE"
+              class="link"
+              >MIT License</a
+            >
           </li>
           <li>
-            <a href="#" class="link">Website Source</a>
+            <a
+              href="https://github.com/callum-hart/immutable-styles-website"
+              class="link"
+              >Website Source</a
+            >
           </li>
         </ul>
 
         <div class="button-group">
-          <a href="#" class="button-primary">Get Started</a>
-          <a href="#" class="button-secondary">Documentation</a>
+          <a
+            href="https://callum-hart.gitbook.io/immutable-styles/beginnertutorial"
+            class="button-primary"
+            >Get Started</a
+          >
+          <a
+            href="https://callum-hart.gitbook.io/immutable-styles/"
+            class="button-secondary"
+            >Documentation</a
+          >
         </div>
       </section>
-      <!-- <p>No CSS rules were overriden whilst building this site ❤️</p> -->
     </footer>
 
     <!-- Only needed during development for HMR -->
