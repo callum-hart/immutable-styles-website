@@ -37,6 +37,10 @@ export default [
     text-indent: 6ch;
   </mixins.loc>,
 
+  <mixins.loc className="loc tab-4">
+    text-indent: 8ch;
+  </mixins.loc>,
+
   <mixins.loc className="loc tab-1 stack-up">
     margin-top: var(--size-s);
     text-indent: 2ch;
@@ -50,6 +54,11 @@ export default [
   <mixins.loc className="loc tab-3 stack-up">
     margin-top: var(--size-s);
     text-indent: 6ch;
+  </mixins.loc>,
+
+  <mixins.loc className="loc tab-4 stack-up">
+    margin-top: var(--size-s);
+    text-indent: 8ch;
   </mixins.loc>,
 
   <span className="keyword">

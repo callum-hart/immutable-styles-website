@@ -825,24 +825,6 @@
                         <span class="tag">&lt;/mixins.button</span
                         ><span class="tag">&gt;</span>,
                       </li>
-                      <li class="loc tab-1">
-                        <span class="tag">&lt;mixins.button</span>
-                        <span class="attribute-light">className</span>=<span
-                          class="string"
-                          >"primary-btn"</span
-                        >
-                        <span class="attribute-light">pseudo</span>=<span
-                          class="string"
-                          >":focus"</span
-                        ><span class="tag">&gt;</span>
-                      </li>
-                      <li class="loc tab-2">
-                        box-shadow: 0 0 0 4px #A8CBF5
-                      </li>
-                      <li class="loc tab-1">
-                        <span class="tag">&lt;/mixins.button</span
-                        ><span class="tag">&gt;</span>,
-                      </li>
                       <li class="loc tab-1 stack-up">
                         <span class="tag">&lt;mixins.button</span>
                         <span class="attribute-light">className</span>=<span
@@ -858,24 +840,6 @@
                       </li>
                       <li class="loc tab-2">
                         border-color: #F7F4F2;
-                      </li>
-                      <li class="loc tab-1">
-                        <span class="tag">&lt;/mixins.button</span
-                        ><span class="tag">&gt;</span>,
-                      </li>
-                      <li class="loc tab-1">
-                        <span class="tag">&lt;mixins.button</span>
-                        <span class="attribute-light">className</span>=<span
-                          class="string"
-                          >"secondary-btn"</span
-                        >
-                        <span class="attribute-light">pseudo</span>=<span
-                          class="string"
-                          >":focus"</span
-                        ><span class="tag">&gt;</span>
-                      </li>
-                      <li class="loc tab-2">
-                        box-shadow: 0 0 0 4px #A8CBF5
                       </li>
                       <li class="loc tab-1">
                         <span class="tag">&lt;/mixins.button</span
@@ -900,24 +864,6 @@
                       <li class="loc tab-1">
                         <span class="tag">&lt;/mixins.button</span
                         ><span class="tag">&gt;</span>,
-                      </li>
-                      <li class="loc tab-1">
-                        <span class="tag">&lt;mixins.button</span>
-                        <span class="attribute-light">className</span>=<span
-                          class="string"
-                          >"tertery-btn"</span
-                        >
-                        <span class="attribute-light">pseudo</span>=<span
-                          class="string"
-                          >":focus"</span
-                        ><span class="tag">&gt;</span>
-                      </li>
-                      <li class="loc tab-2">
-                        box-shadow: 0 0 0 4px #A8CBF5
-                      </li>
-                      <li class="loc tab-1">
-                        <span class="tag">&lt;/mixins.button</span
-                        ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc">
                         ];
@@ -1025,26 +971,22 @@
                         ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">position</span>: relative;
-                      </li>
-                      <li class="loc tab-2 stack-up">
-                        <span class="tag">&lt;p</span>
-                        <span class="attribute-dark">className</span>=<span
-                          class="string"
-                          >"content"</span
-                        ><span class="tag">&gt;</span>
-                      </li>
-                      <li class="loc tab-3">
-                        <span class="property-name">display</span>: none;
-                      </li>
-                      <li class="loc tab-3">
-                        <span class="property-name">position</span>: absolute;
-                      </li>
-                      <li class="loc tab-3">
-                        <span class="property-name">width</span>: 200px;
+                        align-items: center;
                       </li>
                       <li class="loc tab-2">
-                        <span class="tag">&lt;/p&gt;</span>
+                        display: flex;
+                      </li>
+                      <li class="loc tab-2">
+                        position: relative;
+                      </li>
+                      <li class="loc tab-2 stack-up">
+                        <span class="tag">&lt;svg&gt;</span>
+                      </li>
+                      <li class="loc tab-3">
+                        color: #9E9E9D;
+                      </li>
+                      <li class="loc tab-2">
+                        <span class="tag">&lt;/svg&gt;</span>
                       </li>
                       <li class="loc tab-1">
                         <span class="tag">&lt;/div&gt;</span>,
@@ -1063,11 +1005,11 @@
                         <span class="tag">&lt;p</span>
                         <span class="attribute-dark">className</span>=<span
                           class="string"
-                          >"content"</span
+                          >"tooltip-content"</span
                         ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc tab-3">
-                        <span class="property-name">display</span>: block;
+                        display: flex;
                       </li>
                       <li class="loc tab-2">
                         <span class="tag">&lt;/p&gt;</span>
@@ -1194,54 +1136,70 @@
                         <span class="string">'immutable-styles'</span>;
                       </li>
                       <li class="loc">
-                        <span class="keyword">import</span> { darken }
+                        <span class="keyword">import</span> { lighten }
                         <span class="keyword">from</span>
                         <span class="string">'polished'</span>;
                       </li>
                       <li class="loc stack-up">
-                        <span class="keyword">const</span> formBackground =
-                        <span class="string">'white'</span>;
+                        <span class="keyword">const</span> fieldsetBackground =
+                        <span class="string">'#242322'</span>;
                       </li>
                       <li class="loc stack-up">
-                        <span class="keyword">export default</span> [
+                        <span class="keyword">export default</span> (
                       </li>
                       <li class="loc tab-1">
                         <span class="tag">&lt;form</span>
                         <span class="attribute-light">className</span>=<span
                           class="string"
-                          >"checkout"</span
+                          >"form--disabled"</span
                         ><span class="tag">&gt;</span>
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">background</span>: {
-                        formBackground };
-                      </li>
-                      <li class="loc tab-1">
-                        <span class="tag">&lt;/form&gt;</span>,
-                      </li>
-                      <li class="loc tab-1 stack-up">
-                        <span class="tag">&lt;form</span>
-                        <span class="attribute-light">className</span>=<span
-                          class="string"
-                          >"checkout checkout--loading"</span
-                        ><span class="tag">&gt;</span>
+                        opacity: 0.75;
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">background</span>: {
+                        pointer-events: none;
+                      </li>
+                      <li class="loc tab-2 stack-up">
+                        <span class="tag">&lt;fieldset&gt;</span>
+                      </li>
+                      <li class="loc tab-3">
+                        background:
                         <span class="function-light"
-                          ><code class="code-highlight">darken</code></span
-                        >(0.2, formBackground ) };
+                          >repeating-linear-gradient</span
+                        >(
+                      </li>
+                      <li class="loc tab-4">
+                        -55deg,
+                      </li>
+                      <li class="loc tab-4">
+                        { fieldsetBackground },
+                      </li>
+                      <li class="loc tab-4">
+                        { fieldsetBackground } 10px,
+                      </li>
+                      <li class="loc tab-4">
+                        <span class="function-light"
+                          ><code class="code-highlight">lighten</code></span
+                        >(<span class="number-light">0.1</span>,
+                        fieldsetBackground) } 10px,
+                      </li>
+                      <li class="loc tab-4">
+                        <span class="function-light"
+                          ><code class="code-highlight">lighten</code></span
+                        >(<span class="number-light">0.1</span>,
+                        fieldsetBackground) } 20px,
+                      </li>
+                      <li class="loc tab-3">
+                        );
                       </li>
                       <li class="loc tab-2">
-                        <span class="property-name">opacity</span>: 0.6;
-                      </li>
-                      <li class="loc tab-2">
-                        <span class="property-name">pointer-events</span>: none;
+                        <span class="tag">&lt;/fieldset&gt;</span>
                       </li>
                       <li class="loc tab-1">
                         <span class="tag">&lt;/form&gt;</span>
                       </li>
-                      <li class="loc">];</li>
+                      <li class="loc">);</li>
                     </ul>
                   </code>
                 </div>

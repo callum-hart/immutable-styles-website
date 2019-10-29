@@ -1,20 +1,21 @@
 import { createStyle } from 'immutable-styles';
-import { darken } from 'polished';
+import { lighten } from 'polished';
 
-const formBackground = 'white';
+const fieldsetBackground = '#242322';
 
-export default [
-  // <form className="checkout">
-  //   background: { formBackground };
-  // </form>,
-
+export default (
   <form className="form--disabled">
-    {/* background: { darken(0.2, formBackground ) }; */}
     opacity: 0.75;
     pointer-events: none;
 
     <fieldset>
-      background: repeating-linear-gradient(-55deg, #222, #222 10px, #333 10px, #333 20px);
+      background: repeating-linear-gradient(
+        -55deg,
+        { fieldsetBackground },
+        { fieldsetBackground } 10px,
+        { lighten(0.1, fieldsetBackground) } 10px,
+        { lighten(0.1, fieldsetBackground) } 20px
+      );
     </fieldset>
   </form>
-];
+);
