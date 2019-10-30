@@ -1,5 +1,4 @@
 import { createStyle } from "immutable-styles";
-import { from_s } from './constants/breakpoint';
 
 export default (
   <section className="container">

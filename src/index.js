@@ -1,9 +1,7 @@
-import './browser-resets.iss';
-import './layout.iss';
-
 import './atoms/band.iss';
 import './atoms/button.iss';
 import './atoms/code-highlight.iss';
+import './atoms/container.iss';
 import './atoms/infographic.iss';
 import './atoms/link.iss';
 import './atoms/logo.iss';
@@ -27,3 +25,6 @@ import './examples/mobile-friendly.iss';
 import './examples/composition.iss';
 import './examples/interactions.iss';
 import './examples/ui-states.iss';
+
+import './browser-resets.iss';
+import './size-tokens.iss';
