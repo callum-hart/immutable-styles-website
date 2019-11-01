@@ -27,4 +27,4 @@ import './examples/interactions.iss';
 import './examples/ui-states.iss';
 
 import './browser-resets.iss';
-import './size-tokens.iss';
+import './visual-guide.iss';
