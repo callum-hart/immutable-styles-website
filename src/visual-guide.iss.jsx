@@ -25,51 +25,62 @@ import {
 } from './constants/palette';
 
 const mixins = {
-  li: createMixin(
-    <li>
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      flex: 1;
-      height: 120px;
-      margin: 0 var(--size-s);
-
-      <code className="code-highlight">
-        white-space: nowrap;
-      </code>
-    </li>
+  size: createMixin(
+    <div>
+      margin-bottom: var(--size-xl);
+      min-height: var(--size-xl);
+    </div>
+  ),
+  color: createMixin(
+    <div>
+      min-height: var(--size-xl);
+    </div>
   )
 };
 
 export default [
+  <dl className="vg-description-list">
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: var(--size-xl);
+
+    <dt>
+      flex-basis: 30%;
+      text-align: right;
+
+      <code className="code-highlight">
+        margin-right: var(--size-s);
+      </code>
+    </dt>
+
+    <dd>
+      flex-basis: 70%;
+      flex-grow: 1;
+      margin-left: 0;
+    </dd>
+  </dl>,
+
   // Spacing --
 
-  <ul className="vg-spacing-list">
-    align-items: center;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  </ul>,
-
-  <mixins.li className="vg-size-xs">
+  <mixins.size className="vg-size-xs">
     border: var(--size-xs) solid;
-  </mixins.li>,
+  </mixins.size>,
 
-  <mixins.li className="vg-size-s">
+  <mixins.size className="vg-size-s">
     border: var(--size-s) solid;
-  </mixins.li>,
+  </mixins.size>,
 
-  <mixins.li className="vg-size-m">
+  <mixins.size className="vg-size-m">
     border: var(--size-m) solid;
-  </mixins.li>,
+  </mixins.size>,
 
-  <mixins.li className="vg-size-l">
+  <mixins.size className="vg-size-l">
     border: var(--size-l) solid;
-  </mixins.li>,
+  </mixins.size>,
 
-  <mixins.li className="vg-size-xl">
+  <mixins.size className="vg-size-xl">
     border: var(--size-xl) solid;
-  </mixins.li>,
+  </mixins.size>,
 
   // Typography --
 
@@ -79,48 +90,83 @@ export default [
 
   // Colours --
 
-  <dl className="vg-inline-list">
-    display: flex;
+  <mixins.color className="vg-accent_1">
+    background: { accent_1 };
+  </mixins.color>,
 
-    <dt>
-      flex: 1;
-      text-align: right;
-    </dt>
+  <mixins.color className="vg-accent_2">
+    background: { accent_2 };
+  </mixins.color>,
 
-    <dd>
-      flex: 1;
-    </dd>
-  </dl>,
+  <mixins.color className="vg-accent_3">
+    background: { accent_3 };
+  </mixins.color>,
 
-  <dd className="vg-contrast_1">
+  <mixins.color className="vg-accent_4">
+    background: { accent_4 };
+  </mixins.color>,
+
+  <mixins.color className="vg-accent_1__hover">
+    background: { accent_1__hover };
+  </mixins.color>,
+
+  <mixins.color className="vg-accent_2__hover">
+    background: { accent_2__hover };
+  </mixins.color>,
+
+  <mixins.color className="vg-accent_3__hover">
+    background: { accent_3__hover };
+  </mixins.color>,
+
+  <mixins.color className="vg-accent_4__hover">
+    background: { accent_4__hover };
+  </mixins.color>,
+
+  <mixins.color className="vg-accent_1__opaque">
+    background: { accent_1__opaque };
+  </mixins.color>,
+
+  <mixins.color className="vg-accent_2__opaque">
+    background: { accent_2__opaque };
+  </mixins.color>,
+
+  <mixins.color className="vg-accent_3__opaque">
+    background: { accent_3__opaque };
+  </mixins.color>,
+
+  <mixins.color className="vg-accent_4__opaque">
+    background: { accent_4__opaque };
+  </mixins.color>,
+
+  <mixins.color className="vg-contrast_1">
     background: { contrast_1 };
-  </dd>,
+  </mixins.color>,
 
-  <dd className="vg-contrast_2">
+  <mixins.color className="vg-contrast_2">
     background: { contrast_2 };
-  </dd>,
+  </mixins.color>,
 
-  <dd className="vg-contrast_3">
+  <mixins.color className="vg-contrast_3">
     background: { contrast_3 };
-  </dd>,
+  </mixins.color>,
 
-  <dd className="vg-contrast_4">
+  <mixins.color className="vg-contrast_4">
     background: { contrast_4 };
-  </dd>,
+  </mixins.color>,
 
-  <dd className="vg-contrast_1__hover">
+  <mixins.color className="vg-contrast_1__hover">
     background: { contrast_1__hover };
-  </dd>,
+  </mixins.color>,
 
-  <dd className="vg-contrast_2__hover">
+  <mixins.color className="vg-contrast_2__hover">
     background: { contrast_2__hover };
-  </dd>,
+  </mixins.color>,
 
-  <dd className="vg-contrast_3__hover">
+  <mixins.color className="vg-contrast_3__hover">
     background: { contrast_3__hover };
-  </dd>,
+  </mixins.color>,
 
-  <dd className="vg-contrast_4__hover">
+  <mixins.color className="vg-contrast_4__hover">
     background: { contrast_4__hover };
-  </dd>
+  </mixins.color>
 ];
