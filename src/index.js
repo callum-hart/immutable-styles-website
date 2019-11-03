@@ -18,7 +18,6 @@ import './organisms/feature.iss';
 import './organisms/footer.iss';
 import './organisms/header.iss';
 import './organisms/hero.iss';
-import './organisms/main.iss';
 
 import './examples/simple-example.iss';
 import './examples/mobile-friendly.iss';
