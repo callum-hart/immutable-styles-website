@@ -22,7 +22,7 @@ export default [
 
     <input className="text-input">
       { font_sans }
-      background: #D6D5D4;
+      background: #C3C9C3;
       border-bottom: 3px solid { contrast_3 };
       border-left: none;
       border-right: none;

@@ -1,7 +1,7 @@
 import { createStyle } from 'immutable-styles';
-import { lighten } from 'polished';
+import { darken } from 'polished';
 
-const fieldsetBackground = '#242322';
+const fieldsetBackground = '#1F271F';
 
 export default (
   <form className="form--disabled">
@@ -13,8 +13,8 @@ export default (
         -55deg,
         { fieldsetBackground },
         { fieldsetBackground } 10px,
-        { lighten(0.1, fieldsetBackground) } 10px,
-        { lighten(0.1, fieldsetBackground) } 20px
+        { darken(0.1, fieldsetBackground) } 10px,
+        { darken(0.1, fieldsetBackground) } 20px
       );
     </fieldset>
   </form>

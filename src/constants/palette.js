@@ -5,10 +5,10 @@ const _red = '#EB6A6C';
 const _blue = '#40B4D2';
 const _green = '#48D1A0';
 
-const contrast_1 = '#0A0A09';
-const contrast_2 = '#F7F4F2';
-const contrast_3 = '#9E9E9D';
-const contrast_4 = '#242322';
+const contrast_1 = '#191F19';
+const contrast_2 = '#EDF1ED';
+const contrast_3 = '#7F887F';
+const contrast_4 = '#1F271F';
 
 const accent_1 = _yellow;
 const accent_2 = _red;
@@ -20,10 +20,10 @@ const accent_2__opaque = transparentize(0.8, '#EB6A6C');
 const accent_3__opaque = transparentize(0.8, '#40B4D2');
 const accent_4__opaque = transparentize(0.8, '#48D1A0');
 
-const contrast_1__hover = darken(0.1, '#0A0A09');
-const contrast_2__hover = darken(0.1, '#F7F4F2');
-const contrast_3__hover = darken(0.1, '#9E9E9D');
-const contrast_4__hover = darken(0.1, '#242322');
+const contrast_1__hover = darken(0.1, '#191F19');
+const contrast_2__hover = darken(0.1, '#EDF1ED');
+const contrast_3__hover = darken(0.1, '#7F887F');
+const contrast_4__hover = darken(0.1, '#1F271F');
 
 const accent_1__hover = darken(0.1, '#ECED69');
 const accent_2__hover = darken(0.1, '#EB6A6C');
