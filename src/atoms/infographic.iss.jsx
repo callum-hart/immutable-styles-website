@@ -23,12 +23,7 @@ export default [
     fill: { contrast_3 };
   </text>,
 
-  <text className="svg-text hide-to-s">
-    { font_mono }
-    fill: { contrast_3 };
-  </text>,
-
-  <text {...to_s} className="svg-text hide-to-s">
+  <text {...to_s} className="svg-text">
     display: none;
   </text>,
 
