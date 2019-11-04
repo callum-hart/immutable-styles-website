@@ -12,9 +12,9 @@ export default (
       background: repeating-linear-gradient(
         -55deg,
         { fieldsetBackground },
-        { fieldsetBackground } 10px,
-        { darken(0.1, fieldsetBackground) } 10px,
-        { darken(0.1, fieldsetBackground) } 20px
+        { fieldsetBackground } 15px,
+        { darken(0.1, fieldsetBackground) } 15px,
+        { darken(0.1, fieldsetBackground) } 30px
       );
     </fieldset>
   </form>
