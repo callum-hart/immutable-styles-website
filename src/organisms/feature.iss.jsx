@@ -16,7 +16,8 @@ export default [
       align-items: center;
       display: flex;
 
-      <div pseudo=":last-of-type">
+      <div>
+        flex: 1;
         padding-left: var(--size-xl);
       </div>
     </section>

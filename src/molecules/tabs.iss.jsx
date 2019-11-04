@@ -10,6 +10,7 @@ const mixins = {
     <button>
       { font_sans }
       border: none;
+      margin: 0;
       padding: var(--size-xs) var(--size-m);
     </button>
   )

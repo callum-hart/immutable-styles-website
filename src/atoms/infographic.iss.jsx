@@ -7,6 +7,7 @@ import { font_mono } from '../constants/typography';
 export default [
   <svg className="infographic">
     box-shadow: var(--size-xs) var(--size-xs) { contrast_3 };
+    max-width: 100%;
     width: auto;
   </svg>,
 
