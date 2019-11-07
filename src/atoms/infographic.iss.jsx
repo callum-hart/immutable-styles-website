@@ -28,19 +28,19 @@ export default [
     display: none;
   </text>,
 
-  <rect className="fill-contrast-l">
+  <rect className="fill-contrast-2">
     fill: { contrast_2 };
   </rect>,
 
-  <path className="fill-contrast-xl">
+  <path className="fill-contrast-1">
     fill: { contrast_1 };
   </path>,
 
-  <path className="fill-contrast-l">
+  <path className="fill-contrast-2">
     fill: { contrast_2 };
   </path>,
 
-  <path className="fill-contrast-m">
+  <path className="fill-contrast-3">
     fill: { contrast_3 };
   </path>,
 

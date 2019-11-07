@@ -83,11 +83,11 @@ code[class="code-highlight"] {
   border-bottom: 1px solid #eced69;
 }
 section[class="container"] {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--size-xl);
   box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 var(--size-xl);
+  width: 100%;
 }
 svg[class="infographic"] {
   box-shadow: var(--size-xs) var(--size-xs) #7f887f;
@@ -115,16 +115,16 @@ text[class="svg-text"] {
     display: none;
   }
 }
-rect[class="fill-contrast-l"] {
+rect[class="fill-contrast-2"] {
   fill: #edf1ed;
 }
-path[class="fill-contrast-xl"] {
+path[class="fill-contrast-1"] {
   fill: #191f19;
 }
-path[class="fill-contrast-l"] {
+path[class="fill-contrast-2"] {
   fill: #edf1ed;
 }
-path[class="fill-contrast-m"] {
+path[class="fill-contrast-3"] {
   fill: #7f887f;
 }
 path[class="fill-accent-2"] {
